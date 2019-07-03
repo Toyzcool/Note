@@ -184,14 +184,15 @@
      <!DOCTYPE web-app PUBLIC
       "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
       "http://java.sun.com/dtd/web-app_2_3.dtd" >
-     
      <web-app>
        <display-name>Archetype Created Web Application</display-name>
+     <!--  配置前端控制器-->
        <servlet>
          <servlet-name>dispatcherServlet</servlet-name>
          <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
          <init-param>
            <param-name>contextConfigLocation</param-name>
+     <!--      启动时，就运行springmvc的配置文件-->
            <param-value>classpath:springmvc.xml</param-value>
          </init-param>
      <!--    标记容器在启动的时候就加载这个servlet，数值代表优先级-->
@@ -199,7 +200,7 @@
        </servlet>
        <servlet-mapping>
          <servlet-name>dispatcherServlet</servlet-name>
-     <!--    拦截所有请求-->
+     <!--    所有请求都由SpringMVC的前端控制器来处理-->
          <url-pattern>/</url-pattern>
        </servlet-mapping>
      </web-app>
