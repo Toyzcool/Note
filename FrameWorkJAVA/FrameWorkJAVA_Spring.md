@@ -66,11 +66,13 @@
   1. 引入约束
 
      ```xml
+     <?xml version="1.0" encoding="UTF-8"?>
      <beans xmlns="http://www.springframework.org/schema/beans"
-     
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-     
-            xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans.xsd">
+     xmlns:mvc="http://www.springframework.org/schema/mvc"
+     xmlns:context="http://www.springframework.org/schema/context" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+     http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
      ```
 
      
@@ -80,7 +82,7 @@
   3. 建立测试类，包括加载xml配置文件，并创建对象；得到创建对象并执行对象方法
 
      （**getBean()方法相当于获取了工厂类返回的对象**）
-
+  
      ```java
          public void testUser(){
      //        1.加载spring配置文件，创建对象
@@ -88,17 +90,17 @@
                      new ClassPathXmlApplicationContext("applicationContext.xml");
              User user = (User)context.getBean("user");
              user.add();
-         }
+       }
      ```
 
      <!--联想-->
-
+  
      ```
      1.XML配置文件，类似奶茶店，你可以调节奶茶的甜度、容量等参数
      2.对象类，类似一杯奶茶，你可以新增属性比如甜度、容量和方法
-     3.执行类，先访问奶茶店（加载配置文件），然后直接从奶茶店买一杯奶茶（getBean()方法）
+   3.执行类，先访问奶茶店（加载配置文件），然后直接从奶茶店买一杯奶茶（getBean()方法）
      ```
-
+  
      
 
 ## 3.Bean管理
