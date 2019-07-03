@@ -81,11 +81,11 @@
   ![](/Users/toyz/Package/Note/FrameWorkJAVA/SpringMVC详解.png)
 
 <!--比喻
- 1.前端控制器类似电脑上的各种元件，用来接收指令
- 2.控制器类似电脑上CPU
- 3.视图解析器类似显卡
- 4.前端展示类似显示屏
- 流程：键盘敲击指令，指令发送到接口，接口分配给CPU进行运算，运算结果传输到显卡，显卡解析完后显示到显示屏上
+ 1.模拟人躲避子弹
+ 2.前端控制器：类似眼睛，看到子弹飞过来
+ 2.处理器映射器：类似大脑，返回一个让头部躲避的执行链
+ 3.处理器适配器：类似头部，执行躲避的方法
+ 4.视图解析器：类似摄像机，看到了人在躲避子弹
 -->
 
 ### 实现
@@ -302,6 +302,134 @@
 ### 索引
 
 - /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Start
+
+## 2.RequestMapping
+
+### 方法
+
+#### 1.作用
+
+- 实现请求的映射
+
+#### 2.属性及作用
+
+- value/path：指定映射的方法或类——常用
+  - **类添加value值，能够区分模块，见实现中的RequestMappingHandler2.java——重点**
+- Method：指定请求的类型，默认为get（如果属性为post，则无法执行当前方法）——常用
+- params：指定请求需要携带的参数和参数值
+- header：指定请求需要携带请求头部
+
+### 实现
+
+- 前端页面
+
+  ```jsp
+  <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+  <html>
+  <head>
+      <title>Hello</title>
+  </head>
+  <body>
+  <%--RequestMapping属性--%>
+      <%--value、path属性，效果一样--%>
+      <h2>RequestMapping属性</h2>
+      <h3>value、path属性，效果一样</h3>
+      <h4>设计二级value = "/user/testValue",value = "/order/testValue"，用于划分模块</h4>
+          <a href="user/testValue">testValue...user</a><br>
+          <a href="order/testValue">testValue...order</a>
+  
+      <%--method属性--%>
+      <h3>method属性，预期是请求失败，因为需要是post方法</h3>
+      <a href="testMethod">testMethod</a>
+  
+      <%--params属性--%>
+      <h3>params属性,带username属性,而且值必须为Toyz</h3>
+      <a href="testParams?username=Toyz">testParams...username</a>
+  
+      <%--header属性--%>
+      <h3>header属性</h3>
+      <a href="testHeader">testHeader...accept</a>
+  </body>
+  </html>
+  ```
+
+- 处理器
+
+  <!--RequestMappingHandler.java-->
+
+  ```java
+  package org.handler;
+  
+  import org.springframework.stereotype.Controller;
+  import org.springframework.web.bind.annotation.RequestMapping;
+  import org.springframework.web.bind.annotation.RequestMethod;
+  
+  @Controller
+  public class RequestMappingHandler {
+  
+  //    Value、path属性效果一样，同时可以省略属性名称
+  //    设计二级value = "/user/testValue"，用于划分模块,最好是在类中添加value属性——关联RequestMappingHandler2.java
+      @RequestMapping("/user/testValue")
+      public String testValue(){
+          System.out.println("testValue...user");
+          return "success";
+      }
+  
+  //   method属性，指定响应的请求类型
+  //    因为默认请求类型为get，因此请求失败
+      @RequestMapping(value = "testMethod",method = {RequestMethod.POST})
+      public String testMethod(){
+          System.out.println("testMethod...");
+          return "success";
+      }
+  
+  //    params属性，指定必须要传输的参数(username),而且值为Toyz
+      @RequestMapping(value = "testParams",params = {"username=Toyz"})
+      public String testParams(){
+          System.out.println("testParams...username");
+          return "success";
+      }
+  
+      //    header属性
+      @RequestMapping(value = "testHeader",headers = {"Accept"})
+      public String testHeader(){
+          System.out.println("testHeader...Accept");
+          return "success";
+      }
+  }
+  ```
+
+  <!--RequestMappingHandler2.java-->
+
+  ```java
+  package org.handler;
+  
+  import org.springframework.stereotype.Controller;
+  import org.springframework.web.bind.annotation.RequestMapping;
+  @Controller
+  //    类中添加value = "/order"，用于划分模块
+  @RequestMapping("/order")
+  public class RequestMappingHandler2 {
+  //    测试value值
+      @RequestMapping("testValue")
+      public String testValue(){
+          System.out.println("testValue...oder");
+          return "success";
+      }
+  }
+  ```
+
+### 索引
+
+- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Start
+
+
+
+
+
+
+
+
 
 
 
