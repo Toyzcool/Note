@@ -70,7 +70,7 @@
   <!--普通的Servlet流程是：请求-url-pattern-给相应的Servlet处理-->
 
 
-#### 3.步骤——重点
+#### 3.执行流程——重点
 
 - 概要
 
@@ -78,7 +78,7 @@
 
 - 详解
 
-  ![](/Users/toyz/Package/Note/FrameWorkJAVA/SpringMVC流程详解.png)
+  ![](/Users/toyz/Package/Note/FrameWorkJAVA/SpringMVC详解.png)
 
 <!--比喻
  1.前端控制器类似电脑上的各种元件，用来接收指令
