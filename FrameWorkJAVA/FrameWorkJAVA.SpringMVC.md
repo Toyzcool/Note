@@ -298,11 +298,6 @@
      }
      ```
 
-     
-
-### 索引
-
-- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Start
 
 ## 2.RequestMapping
 
@@ -422,33 +417,112 @@
 
 ### 索引
 
-- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Start
+- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Basic
 
 ## 3.请求参数绑定
 
 #### 方法
 
-- 第一种方法：初级绑定方法
+##### 1.初级绑定方法
 
-  1. 请求中直接输入参数名以及值
-  2. Controller中的方法带参数
+1. 请求中直接输入参数名以及值
+2. Controller中的方法带参数
 
-  <!--ParamHandler.java-->
+<!--ParamHandler.java-->
+
+```java
+package org.Param.handler;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+@RequestMapping("param")
+public class paramHandler {
+    @RequestMapping("testParam")
+    public String testParam(String username){
+        System.out.printf("Username:"+username);
+        return "success";
+    }
+}
+```
+
+<!--param.jsp-->
+
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Param</title>
+</head>
+<body>
+    <h2>测试参数绑定传递</h2>
+    <h3>绑定用户名</h3>
+    <a href="param/testParam?username=toyz">测试参数绑定传递</a>
+</body>
+</html>
+```
+
+##### 2.使用JavaBean封装
+
+- 新建类，主类和副类（副类作为对象属性注入到主类中），主类和副类实现Serializable接口，实现set和get方法，同时增加toString方法输出对象属性
+
+  <!--Account.java 主类-->
 
   ```java
-  package org.Param.handler;
-  import org.springframework.stereotype.Controller;
-  import org.springframework.web.bind.annotation.RequestMapping;
-  @Controller
-  @RequestMapping("param")
-  public class paramHandler {
-      @RequestMapping("testParam")
-      public String testParam(String username){
-          System.out.printf("Username:"+username);
-          return "success";
+  package domin;
+  import java.io.Serializable;
+  /*
+  请求参数绑定把数据装到当前类中,将对象属性User注入
+   */
+  public class Account implements Serializable {
+      public String username;
+      public String password;
+      public int money;
+  //对象属性
+      public User user;
+  
+      public void setUsername(String username) {this.username = username;}
+      public void setPassword(String password) {this.password = password;}
+      public void setMoney(int money) {this.money = money;}
+      public String getUsername() {return username;}
+      public String getPassword() {return password;}
+      public int getMoney() {return money;}
+      public User getUser() {return user;}
+      public void setUser(User user) {this.user = user;}
+      @Override
+      public String toString() {
+          return "Account{" +
+                  "username='" + username + '\'' +
+                  ", password='" + password + '\'' +
+                  ", money=" + money +
+                  ", user.uname=" + user.uname +
+                  ", user.age=" + user.age +
+                  '}';
       }
   }
+  
   ```
+
+  <!--User.java 副类-->
+
+  ```java
+  package domin;
+  
+  import java.io.Serializable;
+  /*
+  当前类作为对象属性注入Account中
+   */
+  public class User implements Serializable {
+      public String uname;
+      public Integer age;
+  
+      public String getUname() {return uname;}
+      public void setUname(String uname) {this.uname = uname;}
+      public Integer getAge() {return age;}
+      public void setAge(Integer age) {this.age = age;}
+  }
+  ```
+
+- 新建前端表单对象，注意对象属性的name值
 
   <!--param.jsp-->
 
@@ -459,137 +533,112 @@
       <title>Param</title>
   </head>
   <body>
-      <h2>测试参数绑定传递</h2>
-      <h3>绑定用户名</h3>
-      <a href="param/testParam?username=toyz">测试参数绑定传递</a>
+      <h3>1.测试参数绑定传递</h3>
+      <a href="param/testParam?username=toyz&&password=123">测试参数绑定传递</a>
+  
+      <h3>2.测试参数绑定把数据封装到JavaBean中</h3>
+      <form action="param/savaAccount" method="post">
+          姓名：<input type="text" name="username"><br>
+          密码：<input type="text" name="password"><br>
+          金额：<input type="text" name="money"><br>
+          真实姓名：<input type="text" name="user.uname"><br>
+          年龄：<input type="text" name="user.age"><br>
+          <input type="submit" value="提交">
+      </form>
   </body>
   </html>
   ```
 
-- 第二种方法：使用JavaBean封装
+  新建Handler，将主类作为参数传入对应方法中
 
-  - 新建类，主类和副类（副类作为对象属性注入到主类中），主类和副类实现Serializable接口，实现set和get方法，同时增加toString方法输出对象属性
+  <!--paramHandler.java-->
 
-    <!--Account.java 主类-->
+  ```java
+  package org.Param.handler;
+  import domin.Account;
+  import org.springframework.stereotype.Controller;
+  import org.springframework.web.bind.annotation.RequestMapping;
+  @Controller
+  @RequestMapping("param")
+  public class paramHandler {
+  
+      /*
+      1.请求参数绑定入门
+       */
+      @RequestMapping("testParam")
+      public String testParam(String username,String password){
+          System.out.printf("Username:"+username+"  and password:"+password);
+          return "success";
+      }
+  
+      /*
+      2.请求参数绑定封装到JavaBean中
+      */
+      @RequestMapping("savaAccount")
+      public String saveAccount(Account account){
+          System.out.printf("Account封装成功");
+          System.out.println(account);
+          return "success";
+      }
+  }
+  
+  ```
 
-    ```java
-    package domin;
-    import java.io.Serializable;
-    /*
-    请求参数绑定把数据装到当前类中,将对象属性User注入
-     */
-    public class Account implements Serializable {
-        public String username;
-        public String password;
-        public int money;
-    //对象属性
-        public User user;
-    
-        public void setUsername(String username) {this.username = username;}
-        public void setPassword(String password) {this.password = password;}
-        public void setMoney(int money) {this.money = money;}
-        public String getUsername() {return username;}
-        public String getPassword() {return password;}
-        public int getMoney() {return money;}
-        public User getUser() {return user;}
-        public void setUser(User user) {this.user = user;}
-        @Override
-        public String toString() {
-            return "Account{" +
-                    "username='" + username + '\'' +
-                    ", password='" + password + '\'' +
-                    ", money=" + money +
-                    ", user.uname=" + user.uname +
-                    ", user.age=" + user.age +
-                    '}';
-        }
-    }
-    
-    ```
 
-    <!--User.java 副类-->
 
-    ```java
-    package domin;
-    
-    import java.io.Serializable;
-    /*
-    当前类作为对象属性注入Account中
-     */
-    public class User implements Serializable {
-        public String uname;
-        public Integer age;
-    
-        public String getUname() {return uname;}
-        public void setUname(String uname) {this.uname = uname;}
-        public Integer getAge() {return age;}
-        public void setAge(Integer age) {this.age = age;}
-    }
-    ```
+#### 索引
 
-  - 新建前端表单对象，注意对象属性的name值
+- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Basic
 
-    <!--param.jsp-->
+#### 注意
 
-    ```jsp
-    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-    <html>
-    <head>
-        <title>Param</title>
-    </head>
-    <body>
-        <h3>1.测试参数绑定传递</h3>
-        <a href="param/testParam?username=toyz&&password=123">测试参数绑定传递</a>
-    
-        <h3>2.测试参数绑定把数据封装到JavaBean中</h3>
-        <form action="param/savaAccount" method="post">
-            姓名：<input type="text" name="username"><br>
-            密码：<input type="text" name="password"><br>
-            金额：<input type="text" name="money"><br>
-            真实姓名：<input type="text" name="user.uname"><br>
-            年龄：<input type="text" name="user.age"><br>
-            <input type="submit" value="提交">
-        </form>
-    </body>
-    </html>
-    ```
+- 中文乱码问题，使用filter解决编码
 
-  - 新建Handler，将主类作为参数传入对应方法中
+  <!--web.xml-->
 
-    <!--paramHandler.java-->
+  ```xml
+  <web-app>
+    <display-name>Archetype Created Web Application</display-name>
+  
+    <!--  1.配置过滤器解决中文乱码问题-->
+    <filter>
+      <filter-name>characterEncodingFilter</filter-name>
+      <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+      <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+      </init-param>
+    </filter>
+    <filter-mapping>
+      <filter-name>characterEncodingFilter</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    </web-app>
+  ```
 
-    ```java
-    package org.Param.handler;
-    import domin.Account;
-    import org.springframework.stereotype.Controller;
-    import org.springframework.web.bind.annotation.RequestMapping;
-    @Controller
-    @RequestMapping("param")
-    public class paramHandler {
-    
-        /*
-        1.请求参数绑定入门
-         */
-        @RequestMapping("testParam")
-        public String testParam(String username,String password){
-            System.out.printf("Username:"+username+"  and password:"+password);
-            return "success";
-        }
-    
-        /*
-        2.请求参数绑定封装到JavaBean中
-        */
-        @RequestMapping("savaAccount")
-        public String saveAccount(Account account){
-            System.out.printf("Account封装成功");
-            System.out.println(account);
-            return "success";
-        }
-    }
-    
-    ```
+  
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
