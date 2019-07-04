@@ -56,3 +56,12 @@
 
 - 通过eclipse中的run and remove，动态
 - 将Web项目打包成war包，并移动到Tomcat中的Webapps，静态
+
+9.Serializable接口
+
+- 一个类只有实现了Serializable接口，才能被序列化
+- Serializable接口只是一个空接口，用来标记那些类可以被序列化
+- 序列化的情况
+  1. 当你想把的内存中的对象写入到硬盘的时候；
+  2. 当你想用套接字在网络上传送对象的时候；
+  3. 当你想通过RMI传输对象的时候；
