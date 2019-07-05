@@ -748,7 +748,9 @@ public class paramHandler {
 
 #### 7.SessionAttribute——重点
 
-- 作用：用于多个执行器方法间的参数共享，将参数在Session域中存入、取出、删除，当前注解只用于类上
+- 作用：用于多个执行器方法间的参数共享，将参数在Session域中存入、取出、删除
+- 当前注解只用于类上:@SessionAttributes({"sessionName"})
+- Model.addAttribute()方法能够将参数放在Request域中
 - 见实现1
 
 ### 实现
@@ -812,19 +814,17 @@ public class paramHandler {
 
 ```java
 package org.Anno;
-
 import domin.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
-
 import java.util.Date;
 
 @Controller
 @RequestMapping("/anno")
-@SessionAttributes({"sessionName"}) //该注解只用于类
+@SessionAttributes({"sessionName"}) //该注解只用于类，把数据存储在Session域里面
 public class AnnoHandler {
     /*
     1.RequestParam 获取请求参数
@@ -901,7 +901,7 @@ public class AnnoHandler {
     /*
       7.SessionAttribute 向Session中传值、获取值、删除值
     */
-    //  把数据存入 SessionAttribute
+    //  把数据存入 Request域里面
     @RequestMapping("/setSessionAttribute")
     public String setSessionAttribute(Model model){
         model.addAttribute("sessionName","session胜利！！！！");
