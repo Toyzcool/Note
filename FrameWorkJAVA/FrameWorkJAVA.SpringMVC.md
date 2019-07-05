@@ -1,4 +1,4 @@
-# FrameWorkJAVA.SpringMVC
+### FrameWorkJAVA.SpringMVC
 
 ## 1.简介
 
@@ -421,9 +421,9 @@
 
 ## 3.请求参数绑定
 
-#### 方法
+### 方法
 
-##### 1.初级绑定方法
+#### 1.初级绑定方法
 
 1. 请求中直接输入参数名以及值
 2. Controller中的方法带参数
@@ -461,7 +461,7 @@ public class paramHandler {
 </html>
 ```
 
-##### 2.使用JavaBean封装
+#### 2.请求参数绑定实体类型——重点
 
 - 新建类，主类和副类（副类作为对象属性注入到主类中），主类和副类实现Serializable接口，实现set和get方法，同时增加toString方法输出对象属性
 
@@ -586,11 +586,31 @@ public class paramHandler {
 
 
 
-#### 索引
+#### 3.请求参数绑定集合类型
+
+- 原理与绑定实体类型一致，但前端请求格式需要变更
+
+  ```jsp
+  <h3>3.测试参数绑定把数据封装到Account中,类中存在list和map集合</h3>
+          <form action="param/savaAccount" method="post">
+              姓名：<input type="text" name="username"><br>
+              密码：<input type="text" name="password"><br>
+              金额：<input type="text" name="money"><br>
+              <%--List集合属性注入--%>
+              真实姓名：<input type="text" name="list[0].uname"><br>
+              年龄：<input type="text" name="list[0].age"><br>
+              <%--Map集合属性注入--%>
+              真实姓名：<input type="text" name="map['one'].uname"><br>
+              年龄：<input type="text" name="map['one'].age"><br>
+              <input type="submit" value="提交">
+          </form>
+  ```
+
+### 索引
 
 - /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Basic
 
-#### 注意
+### 注意
 
 - 中文乱码问题，使用filter解决编码
 
@@ -616,15 +636,80 @@ public class paramHandler {
     </web-app>
   ```
 
-  
+- 集合类型数据使用toString方法输出时，预期输出对象属性的内容，需要在对象类型属性中也添加toString方法；不添加时输出对象属性的地址；
 
 
 
+## 4.自定义类型转换器
 
+### 方法
 
+- 步骤
 
+  1. 创建类，来实现类型转换逻辑
 
+     ```java
+     public class StringToDate implements Converter<String, Date> {
+         @Override
+     //    s为传进来的参数
+         public Date convert(String s) {
+             if (s == null){
+                 throw new RuntimeException("请输入数据");
+             }
+             DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+             try {
+                 return df.parse(s);
+             } catch (ParseException e) {
+                 e.printStackTrace();
+             }
+             return null;
+         }
+     }
+     ```
 
+  2. SpringMVC的配置文件中，加载实现类型转换的类
+
+     ```xml
+     <!--开启springmvc注解扫描-->
+         <mvc:annotation-driven conversion-service="conversionServiceFactoryBean"/>
+     
+     
+         <!--配置自定义类型转换器-->
+         <bean id="conversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">
+             <property name="converters" >
+                 <set>
+                     <bean class="utils.StringToDate" />
+                 </set>
+             </property>
+         </bean>
+     ```
+
+     
+
+## 5.获取Servlet原生API
+
+### 方法
+
+- 步骤
+
+  1. 编辑Controller
+
+     ```java
+      /*
+         4.获取原生的Servlet API
+         */
+         @RequestMapping("getServletAPI")
+         public String getServletAPI(HttpServletRequest request, HttpServletResponse response){
+             System.out.printf("getServletAPI");
+             System.out.println(request);
+             System.out.println(response);
+             HttpSession httpSession = request.getSession();
+             System.out.println(httpSession);
+             return "success";
+         }
+     ```
+
+     
 
 
 
