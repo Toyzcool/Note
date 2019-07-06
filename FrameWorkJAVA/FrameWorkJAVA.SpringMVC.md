@@ -469,56 +469,42 @@ public class paramHandler {
 
   ```java
   package domin;
+  import lombok.Data;
+  
   import java.io.Serializable;
+  import java.util.ArrayList;
+  import java.util.List;
+  import java.util.Map;
   /*
   请求参数绑定把数据装到当前类中,将对象属性User注入
    */
+  //使用Lombok注解@Data能够自动生成set、get、toString方法
+  @Data
   public class Account implements Serializable {
       public String username;
       public String password;
       public int money;
-  //对象属性
-      public User user;
-  
-      public void setUsername(String username) {this.username = username;}
-      public void setPassword(String password) {this.password = password;}
-      public void setMoney(int money) {this.money = money;}
-      public String getUsername() {return username;}
-      public String getPassword() {return password;}
-      public int getMoney() {return money;}
-      public User getUser() {return user;}
-      public void setUser(User user) {this.user = user;}
-      @Override
-      public String toString() {
-          return "Account{" +
-                  "username='" + username + '\'' +
-                  ", password='" + password + '\'' +
-                  ", money=" + money +
-                  ", user.uname=" + user.uname +
-                  ", user.age=" + user.age +
-                  '}';
-      }
+      private List<User> list;
+      private Map<String, User> map;
   }
-  
   ```
 
   <!--User.java 副类-->
 
   ```java
   package domin;
-  
+  import lombok.Data;
   import java.io.Serializable;
+  import java.util.Date;
   /*
   当前类作为对象属性注入Account中
    */
+  //使用Lombok注解@Data能够自动生成set、get、toString方法
+  @Data
   public class User implements Serializable {
-      public String uname;
-      public Integer age;
-  
-      public String getUname() {return uname;}
-      public void setUname(String uname) {this.uname = uname;}
-      public Integer getAge() {return age;}
-      public void setAge(Integer age) {this.age = age;}
+      private String uname;
+      private Integer age;
+      private Date date;
   }
   ```
 
