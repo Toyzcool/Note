@@ -1,4 +1,4 @@
-### FrameWorkJAVA.SpringMVC
+# FrameWorkJAVA.SpringMVC.Basic
 
 ## 1.简介
 
@@ -969,8 +969,192 @@ public class AnnoHandler {
 
 
 
+## 8.Response
 
+### 方法
 
+#### 1.响应类型为String
+
+<!--Contronller.java-->
+
+```java
+@Controller
+@RequestMapping("user")
+public class UserHandler {
+    /*
+    1.响应返回是String类型
+     */
+    @RequestMapping("testString")
+    public String showUser(Model model){
+        User user = new User();
+        user.setUsername("toyz");
+        user.setPassword("123");
+        user.setAge(23);
+        model.addAttribute("user", user);
+        return "success";
+    }
+```
+
+<!--success.jsp-->
+
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<html>
+<head><title>Success</title></head>
+<body>
+    <h2>Success</h2>
+    用户名为：${user.username}<br>
+    密码为：${user.password}<br>
+    年龄为:${user.age}
+</body>
+</html>
+```
+
+#### 2.响应类型为void
+
+<!--Contronller.java-->
+
+```java
+    /*
+    2.响应返回是void类型
+     */
+    @RequestMapping("testVoid")
+    public void testVoid(HttpServletRequest request, HttpServletResponse response)
+        throws ServletException, IOException {
+//        1. 编写转发请求的程序
+//        request.getRequestDispatcher("/WEB-INF/pages/success.jsp").forward(request, response);
+
+//        2. 重定向
+//        response.sendRedirect(request.getContextPath()+"/index.jsp");
+
+//        3. 直接进行响应
+    //        3.1 中文编码
+            response.setCharacterEncoding("UTF-8");
+            response.setContentType("text/html;charset=UTF-8");
+    //        3.2 响应内容
+            response.getWriter().print("<h2>直接响应成功</h2>");
+    }
+```
+
+#### 3.响应类型为Model And View
+
+<!--Contronller.java-->
+
+```java
+    /*
+    3.响应返回是ModelAndView类型
+    */
+    @RequestMapping("testModelAndView")
+    public ModelAndView testModelAndView(){
+
+        User user = new User();
+        user.setUsername("Muser");
+        user.setPassword("321");
+        user.setAge(100);
+//        create ModelAndView object
+        ModelAndView mv = new ModelAndView();
+//        add object
+        mv.addObject("user", user);
+//        add transition
+        mv.setViewName("success");
+        return mv;
+    }
+```
+
+#### 4.使用关键词转发和重定向
+
+```java
+    /*
+    4.使用关键字进行转发和重定向
+     */
+    @RequestMapping("testForwardOrRedirect")
+    public String testForwardOrRedirect() {
+//                1. 编写转发请求的程序
+//                return "forward:/WEB-INF/pages/success.jsp";
+
+        //        2. 重定向
+                return "redirect:/index.jsp";
+    }
+```
+
+#### 5.响应JSON数据——重点
+
+- 准备工作
+
+  1. 取消静态资源过滤（前端控制器会过滤请求，导致js失效）：webapp下的resources文件中包含js、css、image文件，这些静态文件都不会被前端控制器过滤。
+
+     <!--springmvc.xml-->
+
+     ```xml
+     <!--前端控制器，告知哪些静态资源不进行拦截-->
+         <mvc:default-servlet-handler/>
+     ```
+
+- 步骤
+
+  1. 前端发送ajax请求
+
+     <!--response.jsp-->
+
+     ```jsp
+     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+     <html>
+     <head>
+         <title>Response</title>
+         <script src="resources/js/jquery/jquery-3.4.1.min.js"></script>
+         <script src="resources/js/bootstrap/bootstrap.min.js"></script>
+         <link href="resources/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+     
+         <script>
+         <%--发送Ajax请求--%>
+             $(function () {
+                 $("#btn").click(function () {
+                 //    编写json格式数据
+                     $.ajax({
+                					// 请求的地址       
+                         url:"user/testAjax",
+                         contentType:"application/json;charset:UTF-8",
+                         data:'{"username":"toyzAjax","password":"321","age":40}',
+                         dataType:"json",
+                         type:"post",
+                         success:function (data) {
+                         //    服务器响应json数据，进行解析
+                             alert(data);
+                             alert(data.username+data.password+data.age);
+                         }
+                     });
+                 });
+             });
+         </script>
+     
+     </head>
+     <body>
+         <%-- 2.ResponseBody --%>
+         <h3>2. ResponseBody</h3>
+         <button id="btn" class="btn btn-success">Ajax异步请求</button>
+     </body>
+     </html>
+     ```
+
+  2. 控制器接受数据并返回
+
+     ```java
+       /*
+         5.Ajax进行异步请求
+          */
+         @RequestMapping("testAjax")
+         public @ResponseBody User testAjax(@RequestBody User user) {
+             System.out.println("testAjax...execution");
+             System.out.println(user);
+             user.setUsername("newAjax");
+             user.setAge(999);
+             return user;
+         }
+     ```
+
+### 索引
+
+- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.Response
 
 
 
