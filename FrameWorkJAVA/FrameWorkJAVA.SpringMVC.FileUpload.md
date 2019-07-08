@@ -9,14 +9,11 @@
 <!--Contronller.java-->
 
 ```java
-@Controller
-@RequestMapping("user")
-public class UserHandler {
-    /*
-    1.传统方式文件上传
-     */
+/*
+   1.传统方式文件上传
+    */
     @RequestMapping("fileUpload1")
-    public String fileUpload(HttpServletRequest request) throws Exception {
+    public String fileUpload1(HttpServletRequest request) throws Exception {
         // 使用fileupload组件进行上传
         // 上传位置
         String path = request.getSession().getServletContext().getRealPath("/uploads/");
@@ -32,39 +29,30 @@ public class UserHandler {
         List<FileItem> items = servletFileUpload.parseRequest(request);
         // 遍历对象
         for (FileItem item:items
-             ) {
+        ) {
             //  获取上传文件夹名称
-		        String fileName = item.getName();
-		        //  获取一个唯一id值，赋值给文件名，保证文件名的唯一性
-		        String uuid = UUID.randomUUID().toString().replace("-", "");
-						fileName = uuid+"_"+fileName;
-		        //  保存文件
-		        item.write(new File(path,fileName));
-		        //  清除缓存中文件
-		        item.delete();
+            String fileName = item.getName();
+            //  获取一个唯一id值，赋值给文件名，保证文件名的唯一性
+            String uuid = UUID.randomUUID().toString().replace("-", "");
+            fileName = uuid+"_"+fileName;
+            //  保存文件
+            item.write(new File(path,fileName));
+            //  清除缓存中文件
+            item.delete();
         }
         return "success";
     }
-}
 ```
 
 <!--Index.jsp-->
 
 ```jsp
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Index</title>
-</head>
-<body>
-    <%--传统方式上传文件--%>
-    <h3>传统方式上传文件</h3>
-        <form action="/user/fileUpload1" method="post" enctype="multipart/form-data">
-            文件上传：<input type="file" name="Upload"/>
-            <input type="submit" value="上传"/>
-        </form>
-</body>
-</html>
+<%--1.传统方式上传文件--%>
+    <h3>1.传统方式上传文件</h3>
+    <form action="/file/fileUpload1" method="post" enctype="multipart/form-data">
+        文件上传：<input type="file" name="upload"/>
+        <input type="submit" value="上传"/>
+    </form>
 ```
 
 #### 2.SpringMVC方法
@@ -76,12 +64,12 @@ public class UserHandler {
   <!--Contronller.java-->
 
   ```java
-   		/*
+   /*
       2.Springmvc方式上传文件
        */
       @RequestMapping("fileUpload2")
       // MultipartFile的参数名称需要和前端提交的name一致
-      public String newFileUpload(HttpServletRequest request, MultipartFile springmvcUpload)
+      public String fileUpload2(HttpServletRequest request, MultipartFile upload)
           throws IOException {
           // 确认上传位置
           String path = request.getSession().getServletContext().getRealPath("/uploads/");
@@ -91,21 +79,21 @@ public class UserHandler {
           }
           // 原来的解析工作已经由springmvc的配置文件中的文件解析器完成
           // 获取上传名称
-          String fileName = springmvcUpload.getOriginalFilename();
+          String fileName = upload.getOriginalFilename();
           String uuid = UUID.randomUUID().toString().replace("-", "");
           fileName = uuid+"_"+fileName;
-          springmvcUpload.transferTo(new File(path,fileName));
-  		    return "success";
+          upload.transferTo(new File(path,fileName));
+          return "success";
       }
   ```
 
   <!--Index.jsp-->
 
   ```jsp
-  <%--SpringMVC方式上传文件--%>
-      <h3>SpringMVC方式上传文件</h3>
-      <form action="/user/fileUpload2" method="post" enctype="multipart/form-data">
-          文件上传：<input type="file" name="springmvcUpload"/>
+  <%--2.SpringMVC方式上传文件--%>
+      <h3>2.SpringMVC方式上传文件</h3>
+      <form action="/file/fileUpload2" method="post" enctype="multipart/form-data">
+          文件上传：<input type="file" name="upload"/>
           <input type="submit" value="上传"/>
       </form>
   ```
@@ -120,11 +108,73 @@ public class UserHandler {
       </bean>
   ```
 
+#### 3.跨服务器上传
+
+- 注意点：需要在tomcat服务器的web.xml文件中增加可读写的许可
+
+  ```xml
+  <servlet>
+      <servlet-name>default</servlet-name>
+      <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+      <init-param>
+          <param-name>debug</param-name>
+          <param-value>0</param-value>
+      </init-param>
+      // 允许读写
+      <init-param>
+          <param-name>readonly</param-name>
+          <param-value>false</param-value>
+      </init-param>
+      <init-param>
+          <param-name>listings</param-name>
+          <param-value>false</param-value>
+      </init-param>
+      <load-on-startup>1</load-on-startup>
+  </servlet>
+  ```
+
+- 核心点：需要连接服务器
+
+  <!--Contronller.java-->
+
+  ```java
+   /*
+      3.跨服务器上传文件
+       */
+      // MultipartFile的参数名称需要和前端提交的name一致
+      @RequestMapping("fileUpload3")
+      public String FileUpload3(MultipartFile upload) throws IOException {
+          // 定义上传服务器路径
+          String path = "http://localhost:9090/uploads/";
   
+          // 原来的解析工作已经由springmvc的配置文件中的文件解析器完成
+          // 获取上传名称
+          String fileName = upload.getOriginalFilename();
+          String uuid = UUID.randomUUID().toString().replace("-", "");
+          fileName = uuid+"_"+fileName;
+  
+          // 创建客户端对象
+          Client client = Client.create();
+          // 连接图片上传服务器
+          WebResource webResource = client.resource(path + fileName);
+          // 上传文件
+          webResource.put(upload.getBytes());
+          return "success";
+      }
+  ```
 
+  <!--Index.jsp-->
 
+  ```jsp
+  <%--3.跨服务器上传文件--%>
+      <h3>3.跨服务器上传文件</h3>
+      <form action="/file/fileUpload3" method="post" enctype="multipart/form-data">
+          文件上传：<input type="file" name="upload"/>
+          <input type="submit" value="上传"/>
+      </form>
+  ```
 
-
+  
 
 
 
