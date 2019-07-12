@@ -151,3 +151,35 @@
        </loggers>
    </configuration>
    ```
+
+## 2.SpringMVC and Spring
+
+### Method
+
+1.Principle
+
+![](/Users/toyz/Package/Note/FrameWorkJAVA/Spring整合SpringMVC.png)
+
+2.配置监听器
+
+```xml
+<!--配置监听器，服务器启动后加载Spring配置文件,默认只加载WEB-INF下的applicaitonContext.xml文件-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <!--设置配置文件路径-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+```
+
+### Resources
+
+- /Users/toyz/Package/FrameWorkJAVA/SpringMVC/SpringMVC.SSM
+
+## 3.SpringMVC/Spring/Mybatis
+
+### Method——重点
+
+![](/Users/toyz/Package/Note/FrameWorkJAVA/SSM流程.png)

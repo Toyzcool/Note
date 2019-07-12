@@ -40,7 +40,7 @@
 
 #### 1.底层原理
 
-![](/Users/toyz/Package/FrameWorkJAVA/Note/ioc底层原理.png)
+![](/Users/toyz/Package/Note/FrameWorkJAVA/ioc底层原理.png)
 
 - dom4j是一个Java的XML API,用来读写xml文件
 - UserServlet为了得到UserService对象
