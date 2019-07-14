@@ -1,7 +1,5 @@
 package com.four;
 
-
-
 import static util.Print.*;
 
 public class TestIncreasing {
