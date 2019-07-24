@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec6e73e-6b6c-4e89-906c-178a0f605928" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../IMG/Public访问权限.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/Public访问权限.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/别名现象解析.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/别名现象解析.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/垃圾回收流程.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/垃圾回收流程.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/装箱与拆箱.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IMG/装箱与拆箱.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../六.访问权限控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../六.访问权限控制.md" afterDir="false" />
-    </list>
+    <list default="true" id="eec6e73e-6b6c-4e89-906c-178a0f605928" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -161,6 +151,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -266,12 +257,12 @@
       <option name="presentableId" value="Default" />
       <updated>1563944954402</updated>
       <workItem from="1563944957417" duration="702000" />
-      <workItem from="1563945697368" duration="9107000" />
+      <workItem from="1563945697368" duration="9624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9809000" />
+    <option name="totallyTimeSpent" value="10326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
