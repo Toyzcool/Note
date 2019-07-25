@@ -1,4 +1,4 @@
-package Test;
+package Test.Static;
 
 public class StaticSub extends StaticSuper {
     static String staticGet(){

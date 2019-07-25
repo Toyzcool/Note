@@ -1,4 +1,4 @@
-package Test;
+package Test.Static;
 
 import static util.Print.*;
 
