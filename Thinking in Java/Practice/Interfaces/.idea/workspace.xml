@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8346d651-db71-4516-8345-89b2ed682f74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../八.多态.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../八.多态.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../九.接口.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../九.接口.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,121 +18,76 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nine/Instrument.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adaptee220V.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nine/Wind.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="114">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
               <folding>
-                <element signature="e#126#127#0" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#284#285#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
+                <element signature="e#70#71#0" expanded="true" />
+                <element signature="e#106#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/Animal.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adaptee110V.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="57">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <folding>
+                <element signature="e#79#80#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/Tiger.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/Phone.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#76#77#0" expanded="true" />
-                <element signature="e#112#113#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#97#98#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Test/TestTest.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/TestAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="190">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test/Hunt.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adapter220V.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            <state relative-caret-position="114">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nine/Brass.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adapter110V.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-              <folding>
-                <element signature="e#75#76#0" expanded="true" />
-                <element signature="e#107#108#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nine/Music5.java">
+        <entry file="file://$PROJECT_DIR$/src/TestAdapter/Target.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-              <folding>
-                <element signature="e#80#81#0" expanded="true" />
-                <element signature="e#105#106#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nine/Playable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Nine/Percussion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-              <folding>
-                <element signature="e#102#103#0" expanded="true" />
-                <element signature="e#141#142#0" expanded="true" />
-                <element signature="e#179#180#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#196#197#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="38">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -152,8 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/One/One.java" />
-        <option value="$PROJECT_DIR$/src/util/Print.java" />
         <option value="$PROJECT_DIR$/src/One/Rodent.java" />
         <option value="$PROJECT_DIR$/src/One/Mouse.java" />
         <option value="$PROJECT_DIR$/src/One/TestOne.java" />
@@ -185,12 +139,32 @@
         <option value="$PROJECT_DIR$/src/Test/Animal.java" />
         <option value="$PROJECT_DIR$/src/Test/Tiger.java" />
         <option value="$PROJECT_DIR$/src/Test/TestTest.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Voltage5V.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Voltage220V.java" />
+        <option value="$PROJECT_DIR$/src/Eleven/Processor.java" />
+        <option value="$PROJECT_DIR$/src/Eleven/Apply.java" />
+        <option value="$PROJECT_DIR$/src/Eleven/Upcase.java" />
+        <option value="$PROJECT_DIR$/src/Eleven/Exchange.java" />
+        <option value="$PROJECT_DIR$/src/Eleven/StringProcessor.java" />
+        <option value="$PROJECT_DIR$/src/Eleven/Adapter.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/TestAdaptee.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adaptee.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adapter1.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adapter2.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adaptee220V.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adaptee110V.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Target.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Client.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adapter.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Adapter110V.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/TestAdapter.java" />
+        <option value="$PROJECT_DIR$/src/TestAdapter/Phone.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -200,7 +174,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,16 +190,24 @@
               <item name="Interfaces" type="b2602c69:ProjectViewProjectNode" />
               <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
+              <item name="Eleven" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Interfaces" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TestAdapter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -234,6 +215,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
@@ -248,13 +230,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestTest">
-    <configuration name="Music5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.Music5" />
+  <component name="RunManager" selected="Application.TestAdapter">
+    <configuration name="Phone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestAdapter.Phone" />
       <module name="Interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Nine.*" />
+          <option name="PATTERN" value="TestAdapter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -262,12 +244,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FiveAnother.TestFive" />
+    <configuration name="StringProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Eleven.StringProcessor" />
       <module name="Interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FiveAnother.*" />
+          <option name="PATTERN" value="Eleven.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -275,12 +257,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFour" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Four.TestFour" />
+    <configuration name="TestAdaptee$Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestAdapter.TestAdaptee$Test" />
       <module name="Interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Four.*" />
+          <option name="PATTERN" value="TestAdapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestAdapter.TestAdapter" />
+      <module name="Interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestAdapter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -301,26 +296,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestThree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Three.TestThree" />
-      <module name="Interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Three.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestAdapter" />
+        <item itemvalue="Application.TestAdaptee$Test" />
+        <item itemvalue="Application.StringProcessor" />
+        <item itemvalue="Application.Phone" />
         <item itemvalue="Application.TestTest" />
-        <item itemvalue="Application.Music5" />
-        <item itemvalue="Application.TestFour" />
-        <item itemvalue="Application.TestFive" />
-        <item itemvalue="Application.TestThree" />
       </list>
     </recent_temporary>
   </component>
@@ -335,23 +317,24 @@
       <option name="presentableId" value="Default" />
       <updated>1564111132397</updated>
       <workItem from="1564111136902" duration="3519000" />
-      <workItem from="1564117551607" duration="4452000" />
+      <workItem from="1564117551607" duration="5254000" />
+      <workItem from="1564284257999" duration="1770000" />
+      <workItem from="1564292245509" duration="8483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7971000" />
+    <option name="totallyTimeSpent" value="19026000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22161172" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -360,10 +343,10 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.29120198" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.2904911" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3291536" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Theme Preview" order="0" />
@@ -381,17 +364,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/util/Print.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#79#80#0" expanded="true" />
-            <element signature="e#115#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/One/Rodent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -536,13 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nine/TestNine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nine/TestNine.java" />
     <entry file="file://$PROJECT_DIR$/src/Nine/Note.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -576,39 +542,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nine/Brass.java">
+    <entry file="file://$PROJECT_DIR$/src/Nine/Instrument.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#75#76#0" expanded="true" />
-            <element signature="e#107#108#0" expanded="true" />
-          </folding>
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nine/Wind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Tiger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/Hunt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nine/Brass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Nine/Music5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Nine/Playable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nine/Instrument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nine/Music5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#80#81#0" expanded="true" />
-            <element signature="e#105#106#0" expanded="true" />
-          </folding>
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -616,56 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="55" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding>
-            <element signature="e#102#103#0" expanded="true" />
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#196#197#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nine/Wind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#126#127#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/Hunt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-          <folding>
-            <element signature="e#76#77#0" expanded="true" />
-            <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,6 +609,176 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eleven/Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eleven/Exchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eleven/Apply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eleven/Adapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#94#95#0" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eleven/Upcase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Voltage5V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Voltage220V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/TestAdaptee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adaptee1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#60#61#0" expanded="true" />
+            <element signature="e#96#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adapter1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adapter2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Eleven/StringProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#104#105#0" expanded="true" />
+            <element signature="e#131#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adaptee110V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding>
+            <element signature="e#79#80#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adaptee220V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#70#71#0" expanded="true" />
+            <element signature="e#106#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adapter110V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#76#77#0" expanded="true" />
+            <element signature="e#97#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/Adapter220V.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestAdapter/TestAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
