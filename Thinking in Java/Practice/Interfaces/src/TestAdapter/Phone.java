@@ -1,8 +1,9 @@
 package TestAdapter;
 
 public class Phone {
-    // 使用Target作为传入参数的原因：只要是接入Target接口的类，都能够作为参数进行电压转换
+    // 充电方法，充电需要用到供电方法
     void charging(Target target){
-        target.output5V();
+        int v = target.output5V();
+        System.out.println("使用成功，方法为"+target.getClass().getSimpleName()+",电压为："+v);
     }
 }

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eec6e73e-6b6c-4e89-906c-178a0f605928" name="Default Changelist" comment="" />
+    <list default="true" id="eec6e73e-6b6c-4e89-906c-178a0f605928" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../FrameWorkJAVA/FrameWorkJAVA.SpringMVC.Basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FrameWorkJAVA/FrameWorkJAVA.SpringMVC.Basic.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee110V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee110V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee220V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee220V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter110V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter110V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter220V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter220V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Phone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Target.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Target.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/TestAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/TestAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adaptee110V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adaptee220V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adapter110V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adapter220V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Target.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/TestAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Polymorphism/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Polymorphism/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Polymorphism/out/production/Polymorphism/Test/StaticSub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Polymorphism/out/production/Polymorphism/Test/StaticSuper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Polymorphism/out/production/Polymorphism/Test/TestS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../七.复用类.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../七.复用类.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../九.接口.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../九.接口.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../二. 一切都是对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../二. 一切都是对象.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../五.初始化与清理.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../五.初始化与清理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../八.多态.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../八.多态.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../六.访问权限控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../六.访问权限控制.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,12 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sixteen/Amphibian.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#164#165#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -30,21 +54,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sixteen/Frog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <state relative-caret-position="171">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/eighteen/TestFinalStatic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestReusingClass/Father.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
               <folding>
-                <element signature="e#74#75#0" expanded="true" />
-                <element signature="e#110#111#0" expanded="true" />
+                <element signature="e#89#90#0" expanded="true" />
+                <element signature="e#125#126#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/eighteen/TestFinalStatic.java">
+        <entry file="file://$PROJECT_DIR$/src/TestReusingClass/TestReusingClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+            <state relative-caret-position="171">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestReusingClass/Son.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+              <folding>
+                <element signature="e#93#94#0" expanded="true" />
+                <element signature="e#129#130#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,11 +107,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sixteen/AnimalControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="114">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="17" />
               <folding>
                 <element signature="e#88#89#0" expanded="true" />
-                <element signature="e#112#113#0" expanded="true" />
+                <element signature="e#117#118#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,6 +156,9 @@
         <option value="$PROJECT_DIR$/src/sixteen/AnimalControl.java" />
         <option value="$PROJECT_DIR$/src/sixteen/Frog.java" />
         <option value="$PROJECT_DIR$/src/eighteen/TestFinalStatic.java" />
+        <option value="$PROJECT_DIR$/src/TestReusingClass/Son.java" />
+        <option value="$PROJECT_DIR$/src/TestReusingClass/Father.java" />
+        <option value="$PROJECT_DIR$/src/TestReusingClass/TestReusingClass.java" />
       </list>
     </option>
   </component>
@@ -111,9 +169,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -141,7 +199,7 @@
               <item name="ReusingClasses" type="b2602c69:ProjectViewProjectNode" />
               <item name="ReusingClasses" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="eighteen" type="462c0819:PsiDirectoryNode" />
+              <item name="TestReusingClass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -170,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestFinalStatic">
+  <component name="RunManager" selected="Application.TestReusingClass">
     <configuration name="DerivedClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="thirteen.DerivedClass" />
       <module name="ReusingClasses" />
@@ -210,19 +268,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Stem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="night.Stem" />
-      <module name="ReusingClasses" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="night.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestFinalStatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="eighteen.TestFinalStatic" />
       <module name="ReusingClasses" />
@@ -236,13 +281,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestReusingClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestReusingClass.TestReusingClass" />
+      <module name="ReusingClasses" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestReusingClass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestReusingClass" />
         <item itemvalue="Application.TestFinalStatic" />
         <item itemvalue="Application.Frog" />
         <item itemvalue="Application.DerivedClass" />
         <item itemvalue="Application.ShipControlsDelegation" />
-        <item itemvalue="Application.Stem" />
       </list>
     </recent_temporary>
   </component>
@@ -258,27 +316,27 @@
       <updated>1563944954402</updated>
       <workItem from="1563944957417" duration="702000" />
       <workItem from="1563945697368" duration="9629000" />
+      <workItem from="1564619042066" duration="1956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10331000" />
+    <option name="totallyTimeSpent" value="12287000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25641027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32961586" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32961586" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -288,6 +346,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32961586" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -523,33 +582,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sixteen/Amphibian.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#164#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sixteen/AnimalControl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#112#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sixteen/Frog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="171">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sixteen/AnimalControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="17" />
           <folding>
-            <element signature="e#74#75#0" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#117#118#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -557,7 +608,36 @@
     <entry file="file://$PROJECT_DIR$/src/eighteen/TestFinalStatic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestReusingClass/Son.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="e#93#94#0" expanded="true" />
+            <element signature="e#129#130#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestReusingClass/Father.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="e#89#90#0" expanded="true" />
+            <element signature="e#125#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestReusingClass/TestReusingClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
         </state>
       </provider>
     </entry>

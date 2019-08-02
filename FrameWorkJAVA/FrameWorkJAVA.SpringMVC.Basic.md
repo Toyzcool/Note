@@ -74,11 +74,11 @@
 
 - 概要
 
-  ![](/Users/toyz/Package/Note/FrameWorkJAVA/SpringMVC流程概要.png)
+  ![](/Users/toyz/Package/Note/FrameWorkJAVA/assets/SpringMVC概要.png)
 
 - 详解
 
-  ![](/Users/toyz/Package/Note/FrameWorkJAVA/SpringMVC详解.png)
+  ![](/Users/toyz/Package/Note/FrameWorkJAVA/assets/SpringMVC详解.png)
 
 <!--比喻
  1.模拟人躲避子弹

@@ -2,10 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57dba6da-4f6e-4f49-ab5f-10758e7521bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../FrameWorkJAVA/FrameWorkJAVA.SpringMVC.Basic.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FrameWorkJAVA/FrameWorkJAVA.SpringMVC.Basic.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee110V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee110V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee220V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adaptee220V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter110V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter110V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter220V.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Adapter220V.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Phone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Target.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/Target.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/TestAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Interfaces/out/production/Interfaces/TestAdapter/TestAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adaptee110V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adaptee220V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adapter110V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Adapter220V.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Phone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/Target.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Interfaces/src/TestAdapter/TestAdapter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/StaticSub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Static/StaticSub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/StaticSuper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Static/StaticSuper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test/TestS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Static/TestS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Polymorphism/Test/StaticSub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Polymorphism/Test/StaticSuper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Polymorphism/Test/TestS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../七.复用类.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../七.复用类.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../九.接口.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../九.接口.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../二. 一切都是对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../二. 一切都是对象.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../八.多态.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../八.多态.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../六.访问权限控制.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../六.访问权限控制.md" afterDir="false" />
     </list>
@@ -17,46 +36,49 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fifteen/Animal.java">
+        <entry file="file://$PROJECT_DIR$/src/TestPoly/Father.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
-                <element signature="e#90#91#0" expanded="true" />
-                <element signature="e#122#123#0" expanded="true" />
+                <element signature="e#52#53#0" expanded="true" />
+                <element signature="e#88#89#0" expanded="true" />
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#180#181#0" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#255#256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TestPoly/Son.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
+              <folding>
+                <element signature="e#68#69#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#140#141#0" expanded="true" />
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#262#263#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fifteen/TestAC.java">
+        <entry file="file://$PROJECT_DIR$/src/TestPoly/TestPoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#83#84#0" expanded="true" />
-                <element signature="e#124#125#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fifteen/Cat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -106,6 +128,9 @@
         <option value="$PROJECT_DIR$/src/fifteen/Cat.java" />
         <option value="$PROJECT_DIR$/src/Test/CovariantReturn/ClassGroup.java" />
         <option value="$PROJECT_DIR$/src/Test/CovariantReturn/CovarianReturn.java" />
+        <option value="$PROJECT_DIR$/src/TestPoly/Father.java" />
+        <option value="$PROJECT_DIR$/src/TestPoly/Son.java" />
+        <option value="$PROJECT_DIR$/src/TestPoly/TestPoly.java" />
       </list>
     </option>
   </component>
@@ -117,8 +142,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -128,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,11 +166,16 @@
               <item name="Polymorphism" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Polymorphism" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Polymorphism" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="TestPoly" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -169,20 +200,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestAC">
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Two.Test" />
-      <module name="Polymorphism" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Two.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestPoly">
     <configuration name="TestA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ten.TestA" />
       <module name="Polymorphism" />
@@ -202,6 +220,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="fifteen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPoly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestPoly.TestPoly" />
+      <module name="Polymorphism" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestPoly.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -237,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestPoly" />
         <item itemvalue="Application.TestAC" />
         <item itemvalue="Application.TestS" />
         <item itemvalue="Application.TestA" />
         <item itemvalue="Application.TestR" />
-        <item itemvalue="Application.Test (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -256,14 +287,15 @@
       <option name="presentableId" value="Default" />
       <updated>1564024997479</updated>
       <workItem from="1564025000310" duration="9764000" />
+      <workItem from="1564538332736" duration="3730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9764000" />
+    <option name="totallyTimeSpent" value="13494000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="831" extended-state="6" />
+    <frame x="4" y="31" width="1680" height="981" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -271,7 +303,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24964234" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -280,7 +312,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.3290993" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -453,13 +485,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/TestStatic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/TestStatic.java" />
     <entry file="file://$PROJECT_DIR$/src/ten/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -532,21 +558,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fifteen/Cat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/CovariantReturn/CovarianReturn.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test/CovariantReturn/ClassGroup.java" />
     <entry file="file://$PROJECT_DIR$/src/fifteen/Animal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        <state relative-caret-position="133">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="e#90#91#0" expanded="true" />
             <element signature="e#122#123#0" expanded="true" />
@@ -554,30 +571,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/CovariantReturn/CovarianReturn.java">
+    <entry file="file://$PROJECT_DIR$/src/fifteen/Cat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <element signature="e#104#105#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/CovariantReturn/ClassGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#281#282#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,11 +585,48 @@
     <entry file="file://$PROJECT_DIR$/src/fifteen/TestAC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#83#84#0" expanded="true" />
-            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#109#110#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestPoly/Father.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#52#53#0" expanded="true" />
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestPoly/Son.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestPoly/TestPoly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
