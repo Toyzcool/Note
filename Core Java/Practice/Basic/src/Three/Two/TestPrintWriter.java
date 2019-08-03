@@ -1,7 +1,6 @@
-package Test.Two;
+package Three.Two;
 
 import java.io.*;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class TestPrintWriter {
