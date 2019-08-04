@@ -22,3 +22,21 @@
 
   2.标签<a>中的href属性，有空格会出错
 
+2.span标签中文字自动换行
+
+```css
+span{
+  // 固定宽度
+	width: 800px;
+	word-wrap: break-word;
+}
+```
+
+3.hover后缓慢变换
+
+```css
+a.return-button button:hover{
+	transition-duration: 500ms;
+}
+```
+
