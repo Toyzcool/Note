@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="76f246b3-7fb8-41f1-a2d0-e208cb61b626" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Five/TestEquals/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Five/TestEquals/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../五.继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../五.继承.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,81 +21,64 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Four/TestMethodParam/TestMethodParam.java">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="418">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Four/TestConstructor/TestCons.java">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestChangeable/TestFindMax.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-              <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#161#162#0" expanded="true" />
-              </folding>
+              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Four/Test/A.java">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestEnum/TestEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="266">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Four/Test/B.java">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/TestReflectionClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Five/TestHashCode/TestHashCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Five/TestToString/TestToString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#121#122#0" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="437">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/TestField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="478">
+              <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/Father.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="13" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/Son.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -101,7 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Father.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -110,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Son.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -157,10 +143,19 @@
         <option value="$PROJECT_DIR$/src/Four/Test/A.java" />
         <option value="$PROJECT_DIR$/src/Five/TestEquals/Father.java" />
         <option value="$PROJECT_DIR$/src/Five/TestEquals/Son.java" />
-        <option value="$PROJECT_DIR$/src/Five/TestEquals/Test.java" />
         <option value="$PROJECT_DIR$/src/Five/TestHashCode/TestHashCode.java" />
         <option value="$PROJECT_DIR$/src/Five/TestToString/TestToString.java" />
         <option value="$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestChangeable/TestChangeable.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestChangeable/TestFindMac.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestChangeable/TestFindMax.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestEnum/TestEnum.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestEquals/Test.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestReflection/Person.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestReflection/TestReflectionClass.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestReflection/Father.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestReflection/Son.java" />
+        <option value="$PROJECT_DIR$/src/Five/TestReflection/TestField.java" />
       </list>
     </option>
   </component>
@@ -171,10 +166,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
-    <option name="height" value="981" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -184,6 +178,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,12 +198,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Five" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Five" type="462c0819:PsiDirectoryNode" />
+              <item name="TestReflection" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestToString">
+  <component name="RunManager" selected="Application.TestField">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Five.TestEquals.Test" />
       <module name="Basic" />
@@ -251,12 +252,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCons" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Four.TestConstructor.TestCons" />
+    <configuration name="TestEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Five.TestEnum.TestEnum" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Four.TestConstructor.*" />
+          <option name="PATTERN" value="Five.TestEnum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -264,12 +265,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHashCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Five.TestHashCode.TestHashCode" />
+    <configuration name="TestField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Five.TestReflection.TestField" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Five.TestHashCode.*" />
+          <option name="PATTERN" value="Five.TestReflection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -277,12 +278,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMethodParam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Four.TestMethodParam.TestMethodParam" />
+    <configuration name="TestFindMax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Five.TestChangeable.TestFindMax" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Four.TestMethodParam.*" />
+          <option name="PATTERN" value="Five.TestChangeable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -290,12 +291,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestToString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Five.TestToString.TestToString" />
+    <configuration name="TestReflectionClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Five.TestReflection.TestReflectionClass" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Five.TestToString.*" />
+          <option name="PATTERN" value="Five.TestReflection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -305,11 +306,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestToString" />
-        <item itemvalue="Application.TestHashCode" />
+        <item itemvalue="Application.TestField" />
+        <item itemvalue="Application.TestReflectionClass" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.TestCons" />
-        <item itemvalue="Application.TestMethodParam" />
+        <item itemvalue="Application.TestEnum" />
+        <item itemvalue="Application.TestFindMax" />
       </list>
     </recent_temporary>
   </component>
@@ -324,18 +325,20 @@
       <option name="presentableId" value="Default" />
       <updated>1564727294872</updated>
       <workItem from="1564727297775" duration="2548000" />
-      <workItem from="1564799755157" duration="7191000" />
+      <workItem from="1564799755157" duration="15135000" />
+      <workItem from="1565091313225" duration="68000" />
+      <workItem from="1565091422347" duration="5759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9739000" />
+    <option name="totallyTimeSpent" value="23510000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -344,7 +347,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -523,38 +526,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestUtil.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="951" column="7" lean-forward="true" selection-start-line="951" selection-start-column="7" selection-end-line="951" selection-end-column="7" />
+          <folding>
+            <element signature="e#32809#32810#0" expanded="true" />
+            <element signature="e#32852#32853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestChangeable/TestChangeable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="530" column="5" lean-forward="true" selection-start-line="530" selection-start-column="5" selection-end-line="530" selection-end-column="5" />
+          <folding>
+            <element signature="e#21404#21405#0" expanded="true" />
+            <element signature="e#21440#21441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Four/Test/B.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Five/TestUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Father.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Son.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -567,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Five/TestToString/TestToString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
+        <state relative-caret-position="247">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#121#122#0" expanded="true" />
@@ -578,8 +590,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestChangeable/TestFindMax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestEnum/TestEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Father.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestEquals/Son.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/TestReflectionClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="2007" column="5" lean-forward="true" selection-start-line="2007" selection-start-column="5" selection-end-line="2007" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/Father.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/Son.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Five/TestReflection/TestField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
         </state>
       </provider>
     </entry>
