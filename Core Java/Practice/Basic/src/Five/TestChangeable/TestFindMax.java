@@ -6,8 +6,9 @@ public class TestFindMax {
         for (Object y: args
              ) {
                 Double z = (Double) y;
-                if (z > largest)
+                if (z > largest) {
                     largest = z;
+                }
         }
         System.out.println(largest);
     }

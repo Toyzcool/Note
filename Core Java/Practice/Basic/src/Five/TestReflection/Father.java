@@ -7,8 +7,32 @@ public class Father {
     private int priFatherAge;
     public String pubFatherName;
     public int pubFatherAge;
-    // 构造方法
+
     public Father() { }
-    // 成员方法
-    public void eat(){}
+
+    public Father(String priFatherName , int priFatherAge , String pubFatherName ,
+        int pubFatherAge) {
+        this.priFatherName = priFatherName;
+        this.priFatherAge = priFatherAge;
+        this.pubFatherName = pubFatherName;
+        this.pubFatherAge = pubFatherAge;
+    }
+
+    private Father(String priFatherName , int priFatherAge){
+        this.priFatherName = priFatherName;
+        this.priFatherAge = priFatherAge;
+    }
+    // 方法
+    public void eat(){
+        System.out.println("father eat...");
+    }
+    public void eat(String food){
+        System.out.println("father eat..."+food);
+    }
+    public void edu(){
+        System.out.println("father edu...");
+    };
+    private void run(){
+        System.out.println("father run...");
+    }
 }

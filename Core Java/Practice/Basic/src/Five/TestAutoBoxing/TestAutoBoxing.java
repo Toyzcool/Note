@@ -16,7 +16,7 @@ public class TestAutoBoxing {
         Integer b = 127;
         Integer c = 128;
         Integer d = 128;
-        System.out.println("a == b:"+(a == b));
-        System.out.println("c == d:"+(c == d));
+        System.out.println("a == b:"+(a.equals(b)));
+        System.out.println("c == d:"+(c.equals(d)));
     }
 }
