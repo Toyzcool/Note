@@ -1,77 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="GROUP_BY_SEVERITY" value="true" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="76f246b3-7fb8-41f1-a2d0-e208cb61b626" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestAutoBoxing/TestAutoBoxing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestAutoBoxing/TestAutoBoxing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestChangeable/TestFindMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestChangeable/TestFindMax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Father.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Father.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Son.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Son.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/META-INF/Basic.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Five/TestAutoBoxing/TestAutoBoxing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Five/TestChangeable/TestFindMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Five/TestChangeable/TestFindMax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Five/TestReflection/Father.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Five/TestReflection/Father.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Five/TestReflection/Son.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Five/TestReflection/Son.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../五.继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../五.继承.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Thinking in Java/三.操作符.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Thinking in Java/三.操作符.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Thinking in Java/二. 一切都是对象.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Thinking in Java/二. 一切都是对象.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Thinking in Java/四.控制执行流程.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Thinking in Java/四.控制执行流程.md" afterDir="false" />
-    </list>
+    <list default="true" id="1a85c449-1338-4c91-84cb-ed246f204e14" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
-  </component>
-  <component name="ProjectId" id="1PBBlym5KFmVe1TRe3Bza67k0e3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1PEEqCcODuObFjm7W4Y5OPnTVf6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/file" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/file" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,114 +31,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestLinkedList">
-    <configuration name="TestConstructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Five.TestReflection.TestConstructor" />
-      <module name="Basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Five.TestReflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestLinkedList.TestLinkedList" />
-      <module name="Basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Nine.TestLinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Five.TestReflection.TestMethod" />
-      <module name="Basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Five.TestReflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestReflection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Five.TestReflection.TestReflection" />
-      <module name="Basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Five.TestReflection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestShort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test.TestShort.TestShort" />
-      <module name="Basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.TestShort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TestLinkedList" />
-        <item itemvalue="Application.TestShort" />
-        <item itemvalue="Application.TestReflection" />
-        <item itemvalue="Application.TestMethod" />
-        <item itemvalue="Application.TestConstructor" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="76f246b3-7fb8-41f1-a2d0-e208cb61b626" name="Default Changelist" comment="" />
-      <created>1564727294872</created>
+      <changelist id="1a85c449-1338-4c91-84cb-ed246f204e14" name="Default Changelist" comment="" />
+      <created>1565431043982</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1564727294872</updated>
-      <workItem from="1564727297775" duration="2548000" />
-      <workItem from="1564799755157" duration="15135000" />
-      <workItem from="1565091313225" duration="68000" />
-      <workItem from="1565091422347" duration="14132000" />
-      <workItem from="1565337121137" duration="157000" />
-      <workItem from="1565337330097" duration="363000" />
-      <workItem from="1565337770665" duration="459000" />
-      <workItem from="1565338261854" duration="37000" />
-      <workItem from="1565338318480" duration="199000" />
-      <workItem from="1565338543993" duration="417000" />
-      <workItem from="1565411401750" duration="862000" />
-      <workItem from="1565412801827" duration="114000" />
-      <workItem from="1565413007141" duration="70000" />
-      <workItem from="1565413099177" duration="1543000" />
-      <workItem from="1565416052424" duration="1898000" />
-      <workItem from="1565418476097" duration="32000" />
-      <workItem from="1565418536460" duration="38000" />
-      <workItem from="1565418596652" duration="536000" />
-      <workItem from="1565419565145" duration="16000" />
-      <workItem from="1565419602268" duration="224000" />
-      <workItem from="1565419908664" duration="110000" />
-      <workItem from="1565420036518" duration="395000" />
+      <updated>1565431043982</updated>
+      <workItem from="1565431047908" duration="508000" />
+      <workItem from="1565432510408" duration="826000" />
     </task>
     <servers />
   </component>
@@ -211,64 +61,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="ideajad">
-    <property name="annotate" value="false" />
-    <property name="annotateFully" value="false" />
-    <property name="braces" value="false" />
-    <property name="clear" value="false" />
-    <property name="confirmNavigationTriggeredDecompile" value="true" />
-    <property name="dead" value="true" />
-    <property name="defaultInitializers" value="false" />
-    <property name="dissassemblerOnly" value="false" />
-    <property name="fieldsFirst" value="true" />
-    <property name="fileExtension" value="java" />
-    <property name="fullyQualifiedNames" value="false" />
-    <property name="indentation" value="4" />
-    <property name="intRadix" value="10" />
-    <property name="lineNumbersAsComments" value="true" />
-    <property name="longRadix" value="10" />
-    <property name="maxStringLength" value="64" />
-    <property name="nocast" value="false" />
-    <property name="noclass" value="false" />
-    <property name="nocode" value="false" />
-    <property name="noconv" value="false" />
-    <property name="noctor" value="false" />
-    <property name="nodos" value="false" />
-    <property name="nofd" value="false" />
-    <property name="noinner" value="false" />
-    <property name="nolvt" value="false" />
-    <property name="nonlb" value="false" />
-    <property name="outputDirectory" value="" />
-    <property name="packFields" value="3" />
-    <property name="packImports" value="7" />
-    <property name="prefixNumericalClasses" value="_cls" />
-    <property name="prefixNumericalFields" value="_fld" />
-    <property name="prefixNumericalLocals" value="_lcl" />
-    <property name="prefixNumericalMethods" value="_mth" />
-    <property name="prefixNumericalParameters" value="_prm" />
-    <property name="prefixUnusedExceptions" value="_ex" />
-    <property name="readonly" value="false" />
-    <property name="safe" value="false" />
-    <property name="sort" value="false" />
-    <property name="spaceAfterKeyword" value="false" />
-    <property name="splitStringsAtNewline" value="false" />
-    <property name="useTabs" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>12</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
