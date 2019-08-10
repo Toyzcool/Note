@@ -22,8 +22,11 @@ public class TestLinkedList {
         // 调用next方法
         listIterator.next();
         listIterator.add("E");
-        // 删除元素
-        // listIterator.next();
+        // 向后越过并删除元素
+        listIterator.next(); //必须向后（next）或向前(previous)越过元素后，才能使用remove方法
+        listIterator.remove();
+        // 向前越过并删除元素
+        listIterator.previous(); //必须向后（next）或向前(previous)越过元素后，才能使用remove方法
         listIterator.remove();
         System.out.println(staff.toString());
 
