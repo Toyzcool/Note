@@ -2,53 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a85c449-1338-4c91-84cb-ed246f204e14" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestAutoBoxing/TestAutoBoxing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestAutoBoxing/TestAutoBoxing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestChangeable/TestChangeable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestChangeable/TestChangeable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestChangeable/TestFindMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestChangeable/TestFindMax.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestEnum/TestEnum$Size.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestEnum/TestEnum$Size.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestEnum/TestEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestEnum/TestEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Father.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Father.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Son.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Son.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestEquals/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestHashCode/TestHashCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestHashCode/TestHashCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Father.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Father.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Son.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/Son.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestConstructor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestConstructor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestField.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestField.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestReflection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestReflection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestReflectionClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestReflection/TestReflectionClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Five/TestToString/TestToString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Five/TestToString/TestToString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/Test/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/Test/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/Test/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/Test/B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestConstructor/TestCons.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestConstructor/TestCons.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/Product3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/ProductFatory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/ProductFatory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/TestFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestFactoryMethod/TestFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestMethodParam/Method.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestMethodParam/Method.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestMethodParam/TestMethodParam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestMethodParam/TestMethodParam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestPrivate/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestPrivate/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestPrivate/TestPrivate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestPrivate/TestPrivate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestStaticMath/Math.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestStaticMath/Math.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Four/TestStaticMath/TestMath.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Four/TestStaticMath/TestMath.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Nine/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Nine/Test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Basic/Nine/TestLinkedList/TestLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Nine/TestLinkedList/TestLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Six/TestDefaultMethod/A.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Six/TestDefaultMethod/A.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Six/TestDefaultMethod/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Six/TestDefaultMethod/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Test/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Test/TestShort/TestShort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Test/TestShort/TestShort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Three/One/TestStringBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Three/One/TestStringBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Three/Two/TestPrintWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Three/Two/TestPrintWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/util/SimPrint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/util/SimPrint.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Nine/TestLinkedList/TestLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nine/TestLinkedList/TestLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../九.集合.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../九.集合.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../五.继承.assets/5.反射机制.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../五.继承.assets/屏幕快照 2019-08-06 20.40.32.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../五.继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../五.继承.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,16 +14,25 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1PEEqCcODuObFjm7W4Y5OPnTVf6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -80,7 +46,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestHashMap">
+    <configuration name="TestHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestHashMap.TestHashMap" />
+      <module name="Basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Nine.TestHashMap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Nine.TestLinkedList.TestLinkedList" />
       <module name="Basic" />
@@ -94,8 +73,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestTreeSet.TestTreeSet" />
+      <module name="Basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Nine.TestTreeSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTreeSetSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestTreeSet.TestTreeSetSorted" />
+      <module name="Basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Nine.TestTreeSet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestHashMap" />
+        <item itemvalue="Application.TestTreeSetSorted" />
+        <item itemvalue="Application.TestTreeSet" />
         <item itemvalue="Application.TestLinkedList" />
       </list>
     </recent_temporary>
@@ -112,7 +120,7 @@
       <updated>1565431043982</updated>
       <workItem from="1565431047908" duration="508000" />
       <workItem from="1565432510408" duration="826000" />
-      <workItem from="1565444164089" duration="1271000" />
+      <workItem from="1565444164089" duration="6075000" />
     </task>
     <servers />
   </component>
