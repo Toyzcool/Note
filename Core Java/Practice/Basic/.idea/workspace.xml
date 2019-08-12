@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a85c449-1338-4c91-84cb-ed246f204e14" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Basic/Nine/TestLinkedList/TestLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Nine/TestLinkedList/TestLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nine/TestLinkedList/TestLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nine/TestLinkedList/TestLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Basic/Nine/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Basic/Nine/TestHashMap/TestHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Basic/Nine/TestHashMap/TestHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nine/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nine/TestHashMap/TestHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nine/TestHashMap/TestHashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../九.集合.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../九.集合.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../五.继承.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../五.继承.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +34,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,13 +48,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestHashMap">
-    <configuration name="TestHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestHashMap.TestHashMap" />
+  <component name="RunManager" selected="Application.TestArrayList">
+    <configuration name="TestArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestArrayList.TestArrayList" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Nine.TestHashMap.*" />
+          <option name="PATTERN" value="Nine.TestArrayList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestLinkedList.TestLinkedList" />
+    <configuration name="TestIterator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestIterator.TestIterator" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Nine.TestLinkedList.*" />
+          <option name="PATTERN" value="Nine.TestIterator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTreeSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestTreeSet.TestTreeSet" />
+    <configuration name="TestLinkedHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestLinkedHashSet.TestLinkedHashSet" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Nine.TestTreeSet.*" />
+          <option name="PATTERN" value="Nine.TestLinkedHashSet.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,12 +88,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTreeSetSorted" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestTreeSet.TestTreeSetSorted" />
+    <configuration name="TestUnmodifiableViews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestUnmodifiableViews.TestUnmodifiableViews" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Nine.TestTreeSet.*" />
+          <option name="PATTERN" value="Nine.TestUnmodifiableViews.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestViews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestViews.TestViews" />
+      <module name="Basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Nine.TestViews.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +116,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestHashMap" />
-        <item itemvalue="Application.TestTreeSetSorted" />
-        <item itemvalue="Application.TestTreeSet" />
-        <item itemvalue="Application.TestLinkedList" />
+        <item itemvalue="Application.TestArrayList" />
+        <item itemvalue="Application.TestIterator" />
+        <item itemvalue="Application.TestUnmodifiableViews" />
+        <item itemvalue="Application.TestViews" />
+        <item itemvalue="Application.TestLinkedHashSet" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_LAMBDA,SHOW_PROPERTIES,SHOW_INTERFACES,SHOW_ANONYMOUS,SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -120,7 +139,7 @@
       <updated>1565431043982</updated>
       <workItem from="1565431047908" duration="508000" />
       <workItem from="1565432510408" duration="826000" />
-      <workItem from="1565444164089" duration="6075000" />
+      <workItem from="1565444164089" duration="18809000" />
     </task>
     <servers />
   </component>
