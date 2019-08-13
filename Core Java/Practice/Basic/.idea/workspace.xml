@@ -48,7 +48,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestArrayList">
+  <component name="RunManager" selected="Application.TestArrayDeque">
+    <configuration name="TestArrayDeque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestArrayDeque.TestArrayDeque" />
+      <module name="Basic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Nine.TestArrayDeque.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Nine.TestArrayList.TestArrayList" />
       <module name="Basic" />
@@ -75,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLinkedHashSet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestLinkedHashSet.TestLinkedHashSet" />
+    <configuration name="TestLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nine.TestLinkedList.TestLinkedList" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Nine.TestLinkedHashSet.*" />
+          <option name="PATTERN" value="Nine.TestLinkedList.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,26 +114,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestViews" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Nine.TestViews.TestViews" />
-      <module name="Basic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Nine.TestViews.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestArrayDeque" />
+        <item itemvalue="Application.TestLinkedList" />
         <item itemvalue="Application.TestArrayList" />
         <item itemvalue="Application.TestIterator" />
         <item itemvalue="Application.TestUnmodifiableViews" />
-        <item itemvalue="Application.TestViews" />
-        <item itemvalue="Application.TestLinkedHashSet" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +139,7 @@
       <updated>1565431043982</updated>
       <workItem from="1565431047908" duration="508000" />
       <workItem from="1565432510408" duration="826000" />
-      <workItem from="1565444164089" duration="18809000" />
+      <workItem from="1565444164089" duration="28564000" />
     </task>
     <servers />
   </component>

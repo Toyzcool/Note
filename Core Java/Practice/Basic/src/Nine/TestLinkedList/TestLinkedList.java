@@ -1,36 +1,39 @@
 package Nine.TestLinkedList;
 
+/*
+@Author: Toyz
+@Date: 2019-08-13
+@Time: 09:27
+*/
+
+
+import java.lang.reflect.Field;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.ListIterator;
 
 public class TestLinkedList {
-    public static void main(String[] args) {
-        // 初始化
-        List<String> staff = new LinkedList<String>();
-        staff.add("A");
-        staff.add("B");
-        staff.add("C");
+    public static void main(String[] args) throws Exception {
+        List<String> linkedlist = new LinkedList<>();
+        linkedlist.add("A");
+        linkedlist.add("B");
+        linkedlist.add("C");
 
-        /*
-        Test next(),previous()
-         */
-        // 迭代器初始化
-        ListIterator listIterator = staff.listIterator();
-        listIterator.add("D");
-        // 调用next方法
-        listIterator.next();
-        listIterator.add("E");
-        // 向后越过并删除元素
-        listIterator.next(); //必须向后（next）或向前(previous)越过元素后，才能使用remove方法
-        listIterator.remove();
-        // 向前越过并删除元素
-        listIterator.previous(); //必须向后（next）或向前(previous)越过元素后，才能使用remove方法
-        listIterator.remove();
+        // System.out.println(linkedlist.get(0));
+        // add
+        linkedlist.add(1, "D");
 
-        staff.set(0, "G");
-        System.out.println(staff.toString());
+        // remove
+        linkedlist.remove("C");
 
+        // get
+        linkedlist.get(2);
+
+        // set
+        linkedlist.set(1, "G");
+
+        for (String s : linkedlist) {
+            System.out.println(s);
+        }
     }
 
 }
