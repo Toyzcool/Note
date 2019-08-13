@@ -8,6 +8,7 @@ package Nine.TestArrayList;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class TestArrayList {
@@ -16,6 +17,7 @@ public class TestArrayList {
         list.add("A");
         list.add("B");
         list.add("C");
+
         // set
         list.set(2, "D");
 

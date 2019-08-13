@@ -17,6 +17,7 @@ public class TestArrayDeque {
         deque.add("C");
         deque.add("D");
 
+
         // peek
         System.out.println(deque.peek());
 

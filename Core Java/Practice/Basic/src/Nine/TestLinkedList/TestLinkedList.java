@@ -8,6 +8,7 @@ package Nine.TestLinkedList;
 
 
 import java.lang.reflect.Field;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -17,6 +18,9 @@ public class TestLinkedList {
         linkedlist.add("A");
         linkedlist.add("B");
         linkedlist.add("C");
+
+        Iterator iterator = linkedlist.listIterator();
+
 
         // System.out.println(linkedlist.get(0));
         // add
