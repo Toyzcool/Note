@@ -10,6 +10,7 @@ package Nine.TestIterator;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
 
 public class TestIterator {
     public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class TestIterator {
         list.add("A");
         list.add("B");
         list.add("C");
+        // 迭代器实现遍历
+        ListIterator listIterator = list.listIterator();
+        listIterator.add("D");
+
         // 迭代器实现遍历
         Iterator<String> iterator = list.iterator();
         while (iterator.hasNext()){
