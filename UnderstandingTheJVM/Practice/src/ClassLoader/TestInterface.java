@@ -7,14 +7,25 @@ package ClassLoader;
 */
 
 
+import java.util.UUID;
+
 public class TestInterface {
     public static void main(String[] args) {
-        System.out.println(Sub.b);
+        System.out.println(Sub.a);
     }
 }
 interface Super{
-    int a = 5;
+    String a = "ABC";
+    Thread THREAD = new Thread(){
+        {
+            System.out.println("Super 线程初始化");
+        }
+    };
 }
 interface Sub extends Super{
-    int b =6;
+    Thread THREAD = new Thread(){
+        {
+            System.out.println("Sub 线程初始化");
+        }
+    };
 }
