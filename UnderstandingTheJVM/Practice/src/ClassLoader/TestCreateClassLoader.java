@@ -14,89 +14,97 @@ public class TestCreateClassLoader extends ClassLoader {
     /*
     Paraments
      */
-    // 保存加载器名称
+    // 存储加载器名称
     private String classLoaderName;
-    // 设置加载路径
+    // 存储加载类文件的路径
     private String path;
-    // 设置文件扩展名
+    // 类文件扩展名
     private final String fileExtension = ".class";
 
     /*
-    Methods
+    Constructor
      */
-    // 构造方法,默认系统类构造器为父构造器
+    // 构造方法一，调用默认的父加载器的构造方法
     public TestCreateClassLoader(String classLoaderName){
-        super(); // 调用父构造器的构造方法
+        super();
         this.classLoaderName = classLoaderName;
     }
-    // 构造方法，指定构造器的构造方法
-    public TestCreateClassLoader(String classLoaderName,ClassLoader parent){
+    // 构造方法二，调用指定父加载器的构造方法
+    public TestCreateClassLoader(ClassLoader parent,String classLoaderName){
         super(parent);
         this.classLoaderName = classLoaderName;
     }
 
-    // 设置加载路径的方法
+    /*
+    Methods
+     */
+    // 设置加载类文件的路径
     public void setPath(String path) {
         this.path = path;
     }
 
-    // 读取文件中的字节码数据，并返回字节码数组
-    public byte[] loadClassData(String className){
-        // 输出流变量
-        InputStream is;
-        // 保存字节流的数组
+    // 读取字节流，并返回字节数组
+    public byte[] loadClassData(String className) {
+        // 获取文件输入流
+        InputStream is = null;
+        // 存储字节数组
         byte[] data = null;
-        // 创建一个byte型别数组的缓冲区
-        ByteArrayOutputStream baos;
-
-        // 获取文件路径
+        // 字节流缓冲区
+        ByteArrayOutputStream baos = null;
+        // 修改存储路径
         className = className.replace(".", "/");
 
         try {
-            // 文件字节输入流
-            is = new FileInputStream(new File(this.path+className+fileExtension));
+            // 获取文件输入流
+            is = new FileInputStream(new File(this.path+className+this.fileExtension));
+            // 创建字节流缓冲区对象
             baos = new ByteArrayOutputStream();
 
-            // 创建变量判断是否结束输出
+            // 创建单个字节保存变量
             int ch;
-
-            // 读取字节流并写入字节数组的缓冲区
+            // 读取字节流并保存
             while (-1 != (ch = is.read())){
                 baos.write(ch);
             }
-            // 将缓冲区中的内容输入到字节数组
-            data = baos.toByteArray();
 
+            // 将缓冲区中内容写入字节数组
+            data = baos.toByteArray();
         } catch (Exception e) {
             e.printStackTrace();
+        }finally  {
+            // 关闭输入输出流
+            try {
+                is.close();
+                baos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return data;
     }
 
-    // 重写父加载器中的findClass方法
-    @Override protected Class<?> findClass(String className) throws ClassNotFoundException {
-        // 输出被加载类名和加载器名称
-        System.out.println("className:" + className);
-        System.out.println("classLoaderName:" + classLoaderName);
-        // 获取到class文件中的字节数组
+    // 重写父类findClass方法，类加载器会自动调用
+    @Override protected Class<?> findClass(String className) {
+        System.out.println("className:" + className );
+        System.out.println("classLoaderName:" + this.classLoaderName);
         byte[] data = this.loadClassData(className);
-        // 将字节数组转换为字节实例,defineClass是一个本地方法
         return this.defineClass(className, data, 0, data.length);
     }
 
     /*
-    Test
+    Main
      */
     public static void main(String[] args) throws Exception {
+        // 创建加载器实例
         TestCreateClassLoader loader1 = new TestCreateClassLoader("loader1");
         loader1.setPath("/Users/space/Documents/Growth/Package/Note/UnderstandingTheJVM/Practice/createClass/");
-        Class<?> clazz = loader1.loadClass("TestClass1");
-        System.out.println("clazz:"+clazz);
-        Object obj = clazz.newInstance();
-        System.out.println("obj:"+obj);
+
+        // 获取加载后的Class对象
+        Class<?> clazz = loader1.loadClass("ClassLoader.TestClass1");
+        System.out.println(clazz);
+        // 原newInstance方法已过时
+        Object object = clazz.getDeclaredConstructor().newInstance();
+        System.out.println(object);
     }
 }
 
-class TestClass1{
-    String string = "ABC";
-}
