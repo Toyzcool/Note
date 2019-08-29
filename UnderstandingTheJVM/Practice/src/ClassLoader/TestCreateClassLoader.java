@@ -25,7 +25,7 @@ public class TestCreateClassLoader extends ClassLoader {
     Constructor
      */
     // 构造方法一，调用默认的父加载器的构造方法
-    private TestCreateClassLoader(String classLoaderName){
+    TestCreateClassLoader(String classLoaderName){
         super();
         this.classLoaderName = classLoaderName;
     }
