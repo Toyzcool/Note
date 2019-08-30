@@ -11,7 +11,7 @@ package ClassUnloading;
 
 import java.io.*;
 
-public class TestUnloading extends ClassLoader{
+public class CustomLoader extends ClassLoader{
     /*
     1.创建自定义类加载器
      */
@@ -21,7 +21,7 @@ public class TestUnloading extends ClassLoader{
     private final String fileExtension = ".class"; //文件后缀名
 
     // 1.2 类加载器的构造方法
-    private TestUnloading(String classLoaderName){
+    public CustomLoader(String classLoaderName){
         super();
         this.classLoaderName = classLoaderName;
     }
@@ -75,7 +75,7 @@ public class TestUnloading extends ClassLoader{
      */
     public static void main(String[] args) throws Exception {
         // 2.1 创建加载器实例并加载类
-        TestUnloading loader = new TestUnloading("customizeLoader");
+        CustomLoader loader = new CustomLoader("customizeLoader");
         loader.setPath("/Users/space/Documents/Growth/Package/Note/UnderstandingTheJVM/Practice/createClass/");
         Class<?> clazz = loader.loadClass("ClassUnloading.TestClass");
         System.out.println(clazz);
