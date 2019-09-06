@@ -18,3 +18,4 @@ public class MyTest3 {
         Connection connection = DriverManager.getConnection("jdbc:mysql://lo","username","123");
     }
 }
+
