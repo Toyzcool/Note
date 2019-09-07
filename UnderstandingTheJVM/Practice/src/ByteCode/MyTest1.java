@@ -10,9 +10,13 @@ package ByteCode;
 
 
 public class MyTest1 {
-    public int a = 1 ;
+    private int a = 1 ;
 
-    public int getA() {
+    public MyTest1(){
+
+    }
+
+    private int getA() {
         return a;
     }
 
