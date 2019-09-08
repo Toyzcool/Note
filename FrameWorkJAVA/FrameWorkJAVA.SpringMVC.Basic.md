@@ -10,7 +10,7 @@
 
 - SpringMVC在三层中位置：
 
-  ![](/Users/toyz/Package/Note/FrameWorkJAVA/SpringMVC.png)
+  ![](assets/SpringMVC.png)
 
 - SpringMVC优势
   - 角色划分明确，前端控制器、请求到处理器映射、处理器适配器、视图解析器等
@@ -74,11 +74,11 @@
 
 - 概要
 
-  ![](/Users/toyz/Package/Note/FrameWorkJAVA/assets/SpringMVC概要.png)
+  ![](assets/SpringMVC概要-7838095.png)
 
 - 详解
 
-  ![](/Users/toyz/Package/Note/FrameWorkJAVA/assets/SpringMVC详解.png)
+  ![](assets/SpringMVC详解-7838107.png)
 
 <!--比喻
  1.模拟人躲避子弹

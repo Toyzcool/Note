@@ -90,3 +90,35 @@
 ### 2.6 newarray
 
 - 用途：创建一个指定的原始类型（int、float、char等）数组，并将其引用值压入栈顶
+
+### 2.7 invoke
+
+- 分类
+  - invokeinterface:调用接口中的方法（在运行期决定，具体调用的是实现该接口的类的具体方法）
+  - invokestatic:调用静态方法
+  - invokespecial:调用私有方法、构造方法（init）、父类方法
+  - invokevirtual:调用虚方法，运行期动态查找的过程
+  - invokedynamic:动态调用方法
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
