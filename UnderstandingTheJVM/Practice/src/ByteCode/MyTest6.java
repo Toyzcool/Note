@@ -1,4 +1,5 @@
 package ByteCode;
+import static util.Print.*;
 
 /*
 @Author: Toyz
@@ -17,5 +18,9 @@ public class MyTest6 {
 
         int result = (a + b) * c;
         return result;
+    }
+
+    public static void main(String[] args) {
+        print("1");
     }
 }
