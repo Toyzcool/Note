@@ -35,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MyTest1">
+  <component name="RunManager" selected="Application.MyTest2">
     <configuration name="MyTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="random.extend4.MyTest1" />
       <module name="Basic" />
@@ -49,12 +49,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest3 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="random.grammar2.MyTest3" />
+    <configuration name="MyTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="random.extend4.MyTest2" />
       <module name="Basic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="random.grammar2.*" />
+          <option name="PATTERN" value="random.extend4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyTest2" />
         <item itemvalue="Application.MyTest1" />
         <item itemvalue="Application.MyTest7" />
         <item itemvalue="Application.MyTest5" />
         <item itemvalue="Application.MyTest4" />
-        <item itemvalue="Application.MyTest3 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -123,6 +123,7 @@
       <updated>1568083038621</updated>
       <workItem from="1568083040001" duration="9241000" />
       <workItem from="1568165343735" duration="8777000" />
+      <workItem from="1568524422454" duration="1275000" />
     </task>
     <servers />
   </component>
