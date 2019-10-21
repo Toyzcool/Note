@@ -169,7 +169,68 @@ public class Hero implements Serializable {
 
 - toyz/IntermediateJAVA/src/com.File
 
-### 3.总结
+### 3.数据流扩展
+
+#### 方法
+
+- 读取double类型数据，并将计算后的double类型数据写入
+
+#### 实现
+
+```java
+package LessonOne;
+
+/*
+@Author: Toyz
+@Date: 2019/10/2
+@Time: 17:04
+@Purpose:
+@Related:
+*/
+
+
+import java.io.*;
+import java.util.Scanner;
+
+public class FtoC {
+    public static void main(String[] args) throws IOException {
+        /**
+         * 读取文件中的值
+         */
+        // 创建文件对象
+        File fileRead = new File("/Users/space/Documents/Work/学习文件/Java/Practice/Lesson/src/LessonOne/fahrenheit.txt");
+        System.out.println("文件是否存在"+fileRead.exists());
+        // 新建变量存储读取出来的数字
+        double fahrenheit = 0;
+        // 创建scanner对象用于读取
+        Scanner scanner = new Scanner(fileRead);
+        // 判断是否存在值，是则读取后赋值
+        while (scanner.hasNext()){
+            fahrenheit = scanner.nextDouble();
+        }
+
+
+        /**
+         * 将华氏度转成摄氏度
+         */
+        double celsius = (fahrenheit - 32) * 5 / 9 ;
+
+        /**
+         * 将值写入文件中
+         */
+        File fileWrite = new File("/Users/space/Documents/Work/学习文件/Java/Practice/Lesson/src/LessonOne/celsius.txt");
+        FileOutputStream fileOutputStream = new FileOutputStream(fileWrite);
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream,"utf-8");
+        outputStreamWriter.write(celsius+"");
+        outputStreamWriter.close();
+
+    }
+}
+```
+
+
+
+### 4.总结
 
 #### 流关系图
 
