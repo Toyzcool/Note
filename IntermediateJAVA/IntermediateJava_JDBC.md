@@ -234,14 +234,14 @@ public class NewPreparedStatement {
 
 - toyz/IntermediateJAVA/src/com.JDBC/NewPreparedStatement.java
 
-### 3.Execute和ExecuteUpdate
+### 3.Execute, ExecuteUpdate, ExcuteQuery
 
 #### 注意
 
 1. 区别
 
-- Execute方法能实现增删改查，ExecuteUpdate无法执行查询
-- Execute方法返回值为布尔类型，true是查询，false是insert、update、delete；ExecuteUpdate方法返回值为Int类型，返回受到影响的数据数量
+- Execute方法能实现增删改查; ExecuteUpdate无法执行查询; ExcuteQuery只能执行Select语句
+- Execute方法返回值为布尔类型，true是查询，false是insert、update、delete；ExecuteUpdate方法返回值为Int类型，返回受到影响的数据数量；ExcuteQuery方法返回值为执行结果封装的结果集对象
 
 ### 4.特殊操作
 
