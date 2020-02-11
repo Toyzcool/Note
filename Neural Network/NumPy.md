@@ -144,3 +144,119 @@
 
 - Usage
   - True与1等值，False与0等值
+
+## 多维数组
+
+- Structure
+
+  ![image-20200211193828863](assets/多维数组.png)
+
+  - 类似于一张张的纸，每一张纸长宽就是一个二维数组，所有纸叠加起来就是三维。
+
+- Implementation
+
+  ```python
+  layer_0 = layer_0.reshape(layer_0.shape[0],28,28)
+  print(layer_0.shape)
+  ```
+
+  ```shell
+  # output
+  (128, 28, 28)
+  ```
+
+  ```shell
+  # Analyse
+  1.这是一个三维数组
+  ```
+
+- Rules
+
+  - U[:,1,2]表示第一维全取，第二维取1，第三维取2
+
+## Shape
+
+- Rules
+  - shape [2,3] 表示为数组的意思是第一维有两个元素，第二维有三个元素，如: [[1,2,3],[4,5,6]]
+
+## concatenate
+
+- Definition:根据axis轴组合数组
+
+- Rules
+
+  - "np.concatenate((a,b),axis = n)",n的值就是指定维度相加，比如n=0时，就是维度一相加。见Implementation中的"axis"
+
+- Implementation
+
+  ```python
+  import sys, numpy as np
+  
+  # a，b数组都是二维数组
+  a = np.array([
+      [1, 2],
+      [3, 4]
+  ])
+  b = np.array([[5, 6]])
+  print("=====组合前=====")
+  print("a.shape:" + str(a.shape))
+  print("b.shape:" + str(b.shape))
+  
+  # 组合:axis = 0
+  c = np.concatenate((a, b), axis=0)
+  print("=====axis = 0 , 组合后=====")
+  print(c)
+  print("c.shape:" + str(c.shape))
+  
+  # 组合:axis = 1
+  d = np.concatenate((a, b.T), axis=1)
+  print("=====axis = 1 , 组合后=====")
+  print(d)
+  print("c.shape:" + str(d.shape))
+  
+  # axis
+  q1 = np.array([[[5, 6]]])
+  q2 = np.array([[[7, 8]]])
+  print("=====axis = 0 , 组合后=====")
+  q3 = np.concatenate((q1,q2),axis=0)
+  print(q3)
+  print("shape:" + str(q3.shape))
+  print("=====axis = 1 , 组合后=====")
+  q3 = np.concatenate((q1,q2),axis=1)
+  print(q3)
+  print("shape:" + str(q3.shape))
+  print("=====axis = 2 , 组合后=====")
+  q3 = np.concatenate((q1,q2),axis=2)
+  print(q3)
+  print("shape:" + str(q3.shape))
+  ```
+
+  ```shell
+  # output
+  =====组合前=====
+  a.shape:(2, 2)
+  b.shape:(1, 2)
+  =====axis = 0 , 组合后=====
+  [[1 2]
+   [3 4]
+   [5 6]]
+  c.shape:(3, 2)
+  =====axis = 1 , 组合后=====
+  [[1 2 5]
+   [3 4 6]]
+  d.shape:(2, 3)
+  
+  =====axis = 0 , 组合后=====
+  [[[5 6]]
+   [[7 8]]]
+  shape:(2, 1, 2)
+  =====axis = 1 , 组合后=====
+  [[[5 6]
+    [7 8]]]
+  shape:(1, 2, 2)
+  =====axis = 2 , 组合后=====
+  [[[5 6 7 8]]]
+  shape:(1, 1, 4)
+  ```
+
+  
