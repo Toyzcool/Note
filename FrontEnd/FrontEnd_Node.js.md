@@ -46,6 +46,8 @@
 
   4. 主线程不断重复第三步。
 
+  ![image-20200210200455022](assets/taskqueue.png)
+
 # 2.Read Eval Print Loop
 
 - Definition(交互解释器)：表示电脑环境。<!--类似于Unix/Linux shell-->
@@ -163,6 +165,7 @@
   	2.connectHandler中触发data_received事件。当connectHandler执行后，就会触发data_received事件。
   	3.data_received事件绑定了匿名的程序。当data_received触发后，将执行匿名的程序。
   2.执行顺序是：connection事件触发——执行connectHandler程序——触发data_received事件——执行匿名程序。
+  3.eventEmitter.emit()是触发事件的方法；eventEmitter.on()是绑定触发事件的方法。
   ```
 
   
