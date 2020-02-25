@@ -1,54 +1,245 @@
-## FrontEnd
+# JavaScript
 
-### 三.JavaScript
+- Rules
+  - 区分大小写
+  - 声明之后需要有分号（semicolon）隔开
 
-### 1.基础方法
+## 基础方法
 
-#### 方法
+1. 调试方法
+   - alert()，运行到的以上代码没问题
+   - 运行后，通过浏览器控制台查看错误
+   - 通过console.log()日志输出
 
-1.调试方法
+2. 变量类型
+   - Undefined,Boolean,Number,String
+   - Var,动态类型，会根据赋值自行选择类型
+   - Typeof,变量类型判断
 
-- alert()，运行到的以上代码没问题
-- 运行后，通过浏览器控制台查看错误
-- 通过console.log()日志输出
+| Type      | String returned by typeof |
+| --------- | ------------------------- |
+| Number    | "number"                  |
+| String    | "string"                  |
+| Boolean   | "boolean"                 |
+| Object    | "object"                  |
+| Function  | "function"                |
+| Undefined | "undefined"               |
+| Null      | "object"                  |
 
-2.变量类型
+3. 函数
 
-- Undefined,Boolean,Number,String
-- Var,动态类型，会根据赋值自行选择类型
-- Typeof,变量类型判断
+   - 格式为function为关键字，print为函数名称，()内为参数列表，{}内部为方法
 
-3.函数
+   - Implementation
 
-- 格式为function为关键字，print为函数名称，()内为参数列表，{}内部为方法
-- 见实现1
+     ```
+     // 输出函数
+     function print(message){
+     	document.write(message);
+     }
+     // 计算函数
+     function calc(x,y){
+     	return x+y;
+     }
+     print(calc(10,20));
+     ```
 
-4.作用域
+4. 作用域
+   - 参数作用域仅仅在函数内部
+   - 全局变量定义在函数前面，所有函数都可以访问
 
-- 参数作用域仅仅在函数内部
-- 全局变量定义在函数前面，所有函数都可以访问
-
-5.逻辑运算符
-
+5. 逻辑运算符
+  
 - 绝对等于和绝对不等于，===和!===会进行值和类型的判断
+  
+6. Array
 
-#### 实现
+   - Rules
 
-1.函数基本方法
+     - 支持存储不同类型的数据
+- 支持arrya中放array
+     - 索引的起始值为零
+- 添加
+     
+  - 末尾：数组名.push()
+       - 头部：数组名.unshift()
+  - 两个方法的返回值都是数组中元素数量
+     - 删除
+       - 末尾：数组名.pop()
+       - 头部：数组名.shift()
+       - 任意位置添加或删除：数组名.splice(2,0,"a","b")：2是代表索引；0代表移除元素数量；a和b代表添加的元素
 
-```javascript
-// 输出函数
-function print(message){
-	document.write(message);
-}
-// 计算函数
-function calc(x,y){
-	return x+y;
-}
-print(calc(10,20));
-```
 
-### 2.Calculator——Practice
+### 常用方法
+
+- 操作页面内element：innerHTML
+
+  <!--Writing into an HTML element, using innerHTML-->
+
+- 操作页面内output：document.write()
+
+- 页面内警告框：window.alert()
+
+  - 能够在页面加载时，显示提示，并附带ok键
+
+    ```html
+    <body onload = "alert('Hello')";>
+    </body>
+    ```
+
+- 页面内输入框：prompt()
+
+- 打开指定页面：open()
+
+  ```html
+  <button onclick = "window.open('www.google.com')"> Go to Google</button>
+  ```
+
+- 浏览器的控制台：console.log()
+
+### 事件（Events）
+
+- Types
+  - onclick
+  - onmouseover
+  - onsubmit: makes something happen when the user submits a form
+  
+    ![image-20200223114345328](assets/image-20200223114345328.png)
+
+### DOM
+
+- Definition: Document Object Model. Because HTML is a hierarchical document.
+
+  <!--All the tags are children of HTML-->
+
+  ![image-20200223114847083](assets/image-20200223114847083.png)
+
+- Methods
+
+  - 访问页面元素常用元素的id字段
+
+  - innerHTML用来获取或者是替代元素内容
+
+    ```html
+    < p id="demo"></p>
+    < script>
+    	document.getElementById("demo").innerHTML = "Hello World!"; 
+    </script>
+    ```
+
+  - 访问页面元素的其他方法
+
+    - 使用tagName：document.getElementsByTagName(*name*)
+
+      - 如果有多个相同的tagName，得到的是数组
+
+        ```html
+        <body>
+        	<ul id="mylist">
+            <li>one</li>
+            <li>two</li>
+        		<li>three</li>
+         </ul>
+          <script>
+            var listItems = document. getElementsByTagName( 'li');
+            for ( var i = 0 ; i < listItems.length; i++) { alert( listItems[ i].innerHTML);
+            } ;
+          </script>
+        </body>
+        ```
+
+        
+
+    - 使用class name：document.getElementsByClassName(*name*)
+
+  - 点击元素后调用方法
+
+    ```javascript
+    document.getElementById(id).onclick = function(){code}
+    ```
+
+  - 设置元素的属性
+
+    ```javascript
+    document.getElementById("link1").setAttribute("href","http://www.sheffield.ac.uk");
+    ```
+
+  - 设置元素的样式
+
+    ```javascript
+    document.getElementById("p2").style.color = "blue";
+    ```
+
+  - 可以将点击事件和设置结合
+
+    ```html
+    < button type="button" onclick="document.body.style.backgroundColor = 'red'" >Click Me!</button>
+    ```
+
+  - 添加和删除页面元素
+
+    ![image-20200223115921692](assets/image-20200223115921692.png)
+    
+  - 判断点击元素
+  
+    ```javascript
+    function closeMenu(event){
+    	if(event.target == cover){
+    		document.getElementById("cover").style.display = "none";
+    	}
+    	if(event.target == closeWindow){
+    		document.getElementById("cover").style.display = "none";
+    	}
+    }
+    ```
+  
+    ```python
+    # Analyse
+    如果一个按钮的"onclick"事件是"closeMenu(event)"，通过"event.target"来判断触发这个方法的元素的id是否为相应的值
+    ```
+  
+  - 页面加载完成后运行方法
+  
+    ```html
+    <!-- 一般加在body的属性中 -->
+    <body onload="askDetails()"></body>
+    ```
+
+### HTML5和Javascript
+
+- 区别
+
+  - H5开头需要声明"<!DOCTYPE html>"
+  - H5是新的标准，添加了比如智能表单等功能。
+
+- Implementation
+
+  <!--H5和JavaScript分别实现一个日期限制的功能-->
+
+  ```html
+  <!-- 仅仅使用HTML5实现限制日期 -->
+  <input type="date" id="birthH5" min="1900-01-01" max="2011-12-31" />
+  ```
+
+  ```javascript
+  // 使用JavaScript
+  function validateName(){
+  	var bitrh = document.getElementById("birth").value;
+  	// birthday
+  	var minYear = "1900";
+  	var maxYear = "2011";
+  	if (bitrh < minYear || bitrh > maxYear){
+  		document.getElementById("yearError").innerHTML = "Please enter validate year";
+  		document.getElementById("yearError").style.display = "inline";
+  		return false;
+  	}else{
+  		document.getElementById("yearError").style.display = "none";
+  	}
+  	return true;
+  }
+  ```
+
+### Calculator——Practice
 
 #### 预期
 
@@ -95,7 +286,7 @@ function calc(){
 
 - Package/FrontEnd/JavaScript/Calculator.html
 
-### 3.InterestCalculate——Practice
+### InterestCalculate——Practice
 
 #### 预期
 

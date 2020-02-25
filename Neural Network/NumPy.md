@@ -360,5 +360,115 @@
   (100,) * (100,) = (100,)
   ```
 
-  
 
+## numpy.outer()
+
+- Rules
+
+  - 两个向量相乘
+  - 如果有多维矩阵，则多维矩阵变为单维进行运算
+
+- Implementation
+
+  ```python
+  import numpy as np
+  
+  a = np.array([1,2,3])
+  b = np.array([[[
+      [4,5,6],
+      [7,8,9]
+                ]]])
+  c = np.outer(a,b)
+  print(c)
+  ```
+
+  ```
+  # output
+  [[ 4  5  6  7  8  9]
+   [ 8 10 12 14 16 18]
+   [12 15 18 21 24 27]]
+  ```
+
+  ```python
+  import numpy as np
+  
+  a = np.array([1,2,3])
+  b = np.array([
+      [4,5,6],
+      [7,8,9]
+  ])
+  c = np.outer(a,b)
+  print(c)
+  ```
+
+  ```
+  [[ 4  5  6  7  8  9]
+   [ 8 10 12 14 16 18]
+   [12 15 18 21 24 27]]
+  ```
+
+## Counter()
+
+- Rules
+
+  - 统计元素出现次数。类似计数器。
+
+- Implementation 
+
+  ```python
+  import numpy as np
+  from collections import Counter
+  
+  a = ['a', 'b', 'c', 'd', 'e']
+  charcnt = Counter(a)
+  print(dict(charcnt))
+  
+  for char in a:
+      charcnt[char] = 0
+  print(charcnt)
+  ```
+
+  ```
+  # output
+  {'a': 1, 'b': 1, 'c': 1, 'd': 1, 'e': 1}
+  Counter({'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0})
+  ```
+
+## most_common(x)
+
+- Rules
+
+  - 返回相似最多的元素，以及重复次数。
+  - x控制返回元素的数量。
+
+- Implementation 
+
+  ```python
+  from collections import Counter
+  #统计字符串
+  # top n问题
+  user_counter = Counter("abbafafpskaag")
+  print(user_counter.most_common(3))
+  print(user_counter['a']) 
+  ```
+
+  ```
+  # output
+  [('a', 5), ('b', 2), ('f', 2)]
+  5
+  ```
+
+
+## numpy.random.rand()
+
+- Rules
+
+  通过本函数可以返回一个或一组服从“0~1”均匀分布的随机样本值。随机样本取值范围是[0,1)，不包括1。
+
+## numpy.mean
+
+- Rules
+  - 求取均值,经常操作的参数为axis，以m * n矩阵举例：
+    - axis 不设置值，对 m*n 个数求均值，返回一个实数
+    - axis = 0：压缩行，对各列求均值，返回 1* n 矩阵
+    - axis =1 ：压缩列，对各行求均值，返回 m *1 矩阵
