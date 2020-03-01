@@ -3,6 +3,75 @@
 - Rules
   - 区分大小写
   - 声明之后需要有分号（semicolon）隔开
+  - 单线程
+  
+- Implementation——Important
+
+  <!--单线程，实现模拟多线程-->
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="utf-8">
+  		<title></title>
+  	</head>
+  	<body>
+  		<!-- case 1 -->
+  		<script>
+  			setTimeout(()=> {console.log("1")},3000)
+  			console.log("2")
+  		</script>
+  		<!-- case 2 -->
+  		<script>
+  			setTimeout(alertTest1,10000)
+  			setTimeout(alertTest2,1000)
+  			
+  			function alertTest1(){
+  				alert("10")
+  			}
+  			
+  			function alertTest2(){
+  				alert("1")
+  			}
+  		</script>
+  	</body>
+  </html>
+  
+  ```
+
+  ```
+  # Output
+  2
+  1
+  
+  1
+  # after 9 seconds
+  10
+  ```
+
+  - Principle
+
+    <img src="assets/image-20200301161106034.png" alt="image-20200301161106034" style="zoom:33%;" />
+
+    - case 1解析
+
+      ```shell
+      1. 运行"setTimeout(()=> {console.log("1")},3000)"，"console.log("1")"进入Event Table并注册，计时开始。
+      2. 运行"console.log("2")"，输出2
+      3. 计时3秒后，函数加入Event Queue
+      4. 主线程执行完毕，开始执行Event Queue中的任务
+      ```
+
+    - case 2解析
+
+      ```shell
+      1.运行"setTimeout(alertTest1,10000)"，"alertTest1"进入Event Table并注册，计时开始。
+      2.运行"setTimeout(alertTest2,1000)"，"alertTest2"进入Event Table并注册，计时开始。
+      3.主线程一直为空，因此一直等待Event Queue中是否有任务。
+      4.1秒后，"alertTest2"进入Event Queue，主线程获取到并执行。
+      4.10秒后，"alertTest1"进入Event Queue，主线程获取到并执行。
+      ```
 
 ## 基础方法
 
@@ -60,7 +129,7 @@
 - 支持arrya中放array
      - 索引的起始值为零
 - 添加
-     
+  
   - 末尾：数组名.push()
        - 头部：数组名.unshift()
   - 两个方法的返回值都是数组中元素数量
@@ -106,7 +175,7 @@
   
     ![image-20200223114345328](assets/image-20200223114345328.png)
 
-### DOM
+## DOM
 
 - Definition: Document Object Model. Because HTML is a hierarchical document.
 
@@ -239,204 +308,155 @@
   }
   ```
 
-### Calculator——Practice
-
-#### 预期
-
-实现页面计算器
-
-#### 实现
-
-1.前端——Calculator.html
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Calculator</title>
-<script type="text/javascript" src="hello.js"></script>
-</head>
-<body>
-	<div>
-		<input type="text" id="num1">
-		<span>+</span>
-		<input type="text" id="num2">
-		<span>=</span>
-		<input type="text" id="res">
-		<input type="button" value="计算" onclick="calc()">
-	</div>
-</body>
-</html>
-```
-
-2.脚本——Calculator.js
-
-```javascript
-// 计算函数
-function calc(){
-	var num1 = document.getElementById("num1").value;
-	var num2 = document.getElementById("num2").value;
-	var res = parseInt(num1) + parseInt(num2);
-	document.getElementById("res").value = res;
-}
-```
-
-#### 索引
-
-- Package/FrontEnd/JavaScript/Calculator.html
-
 ### InterestCalculate——Practice
 
-#### 预期
+- 预期
 
-利息计算器
+  利息计算器
 
-#### 实现
+- 实现
 
-1.使用index写前端页面
+  1.使用index写前端页面
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-	<title>利息计算器</title>
-	<link rel="stylesheet" type="text/css" href="file:///Users/toyz/Package/FrontEnd/JavaScript/PracticeInterestCalculate/style.css"/>
-	<script type="text/javascript" src="calc.js"></script>
-</head>
-<body>
-	<div>
-		<table>
-			<!-- 输入模块 -->
-			<tr>
-				<td class="item">起始资金</td>
-				<td class="date">
-					<input type="text" class="input" id="beginMoney"> ¥
-				</td>
-			</tr>
-				<tr>
-				<td class="item">每年收益</td>
-				<td class="date">
-					<input type="text" class="input" id="interest"> %
-				</td>
-			</tr>
-			</tr>
-				<tr>
-				<td class="item">复利年数</td>
-				<td class="date">
-					<input type="text" class="input" id="years"> 年
-				</td>
-			</tr>
-			</tr>
-				<tr>
-				<td class="item">每年追加资金</td>
-				<td class="date">
-					<input type="text" class="input" id="addMoney"> ¥
-				</td>
-			</tr>
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+  	<title>利息计算器</title>
+  	<link rel="stylesheet" type="text/css" href="file:///Users/toyz/Package/FrontEnd/JavaScript/PracticeInterestCalculate/style.css"/>
+  	<script type="text/javascript" src="calc.js"></script>
+  </head>
+  <body>
+  	<div>
+  		<table>
+  			<!-- 输入模块 -->
+  			<tr>
+  				<td class="item">起始资金</td>
+  				<td class="date">
+  					<input type="text" class="input" id="beginMoney"> ¥
+  				</td>
+  			</tr>
+  				<tr>
+  				<td class="item">每年收益</td>
+  				<td class="date">
+  					<input type="text" class="input" id="interest"> %
+  				</td>
+  			</tr>
+  			</tr>
+  				<tr>
+  				<td class="item">复利年数</td>
+  				<td class="date">
+  					<input type="text" class="input" id="years"> 年
+  				</td>
+  			</tr>
+  			</tr>
+  				<tr>
+  				<td class="item">每年追加资金</td>
+  				<td class="date">
+  					<input type="text" class="input" id="addMoney"> ¥
+  				</td>
+  			</tr>
+  
+  			<!-- 提交模块 -->
+  			<tr>
+  				<td colspan="2" class="item">
+  					<input type="button" value="计算" onclick="get()" style="width: 50%;margin: 5px;">
+  				</td>
+  			</tr>
+  
+  			<!-- 结果模块 -->
+  			</tr>
+  				<tr>
+  				<td class="item">本金和</td>
+  				<td class="date">
+  					<input type="text" class="input" id="benjin"> ¥
+  				</td>
+  			</tr>
+  			</tr>
+  				<tr>
+  				<td class="item">利息和</td>
+  				<td class="date">
+  					<input type="text" class="input" id="lixi"> ¥
+  				</td>
+  			</tr>
+  			</tr>
+  				<tr>
+  				<td class="item">本息和</td>
+  				<td class="date">
+  					<input type="text" class="input" id="benxi"> ¥
+  				</td>
+  			</tr>
+  		</table>
+  	</div>
+  
+  </body>
+  </html>
+  ```
 
-			<!-- 提交模块 -->
-			<tr>
-				<td colspan="2" class="item">
-					<input type="button" value="计算" onclick="get()" style="width: 50%;margin: 5px;">
-				</td>
-			</tr>
+  2.使用css写前端样式
 
-			<!-- 结果模块 -->
-			</tr>
-				<tr>
-				<td class="item">本金和</td>
-				<td class="date">
-					<input type="text" class="input" id="benjin"> ¥
-				</td>
-			</tr>
-			</tr>
-				<tr>
-				<td class="item">利息和</td>
-				<td class="date">
-					<input type="text" class="input" id="lixi"> ¥
-				</td>
-			</tr>
-			</tr>
-				<tr>
-				<td class="item">本息和</td>
-				<td class="date">
-					<input type="text" class="input" id="benxi"> ¥
-				</td>
-			</tr>
-		</table>
-	</div>
+  ```css
+  table{
+  	border: 1px solid #DFDEDF;
+  	width: 25%;
+  	border-collapse: collapse;
+  	font-size: 13px;
+  }
+  td{
+  	border: 1px solid #DFDEDF;
+  }
+  .item{
+  	text-align: center;
+  	width: 160px;
+  }
+  .date{
+  	padding: 5px 10px;
+  	width: 400px;
+  }
+  .input{
+  	width: 80%;
+  	border-radius: 1px;
+  }
+  ```
 
-</body>
-</html>
-```
+  3.使用js写点击事件
 
-2.使用css写前端样式
+  ```javascript
+  function get(){
+  	// 获取输入框中的值
+  	var beginMoney = parseInt(document.getElementById('beginMoney').value);
+  	var interest = parseFloat(document.getElementById('interest').value);
+  	var years = parseInt(document.getElementById('years').value);
+  	var addMoney = parseInt(document.getElementById('addMoney').value);
+  	//新建需要赋值的变量
+  	var benjin = beginMoney ;
+  	var fuli = (interest/100);
+  	//计算本金和
+  	for (var i = 1; i < parseInt(years); i++) {
+  		benjin = parseInt(benjin) + parseInt(addMoney) ;
+  	}
+  	// 计算本息和
+  	var benxi = beginMoney*Math.pow((1+fuli),years);
+  	for (var i = years - 1; i >= 1; i--) {
+  		benxi += addMoney*Math.pow((1+fuli),i);
+  	}
+  	var lixi = benxi - benjin;
+  	//赋值
+  	document.getElementById('benjin').value = benjin;
+  	document.getElementById('lixi').value = lixi;
+  	document.getElementById('benxi').value = benxi;
+  }
+  ```
 
-```css
-table{
-	border: 1px solid #DFDEDF;
-	width: 25%;
-	border-collapse: collapse;
-	font-size: 13px;
-}
-td{
-	border: 1px solid #DFDEDF;
-}
-.item{
-	text-align: center;
-	width: 160px;
-}
-.date{
-	padding: 5px 10px;
-	width: 400px;
-}
-.input{
-	width: 80%;
-	border-radius: 1px;
-}
-```
+- 索引
 
-3.使用js写点击事件
+  Package/FrontEnd/JavaScript/PracticeInterestCalculate
 
-```javascript
-function get(){
-	// 获取输入框中的值
-	var beginMoney = parseInt(document.getElementById('beginMoney').value);
-	var interest = parseFloat(document.getElementById('interest').value);
-	var years = parseInt(document.getElementById('years').value);
-	var addMoney = parseInt(document.getElementById('addMoney').value);
-	//新建需要赋值的变量
-	var benjin = beginMoney ;
-	var fuli = (interest/100);
-	//计算本金和
-	for (var i = 1; i < parseInt(years); i++) {
-		benjin = parseInt(benjin) + parseInt(addMoney) ;
-	}
-	// 计算本息和
-	var benxi = beginMoney*Math.pow((1+fuli),years);
-	for (var i = years - 1; i >= 1; i--) {
-		benxi += addMoney*Math.pow((1+fuli),i);
-	}
-	var lixi = benxi - benjin;
-	//赋值
-	document.getElementById('benjin').value = benjin;
-	document.getElementById('lixi').value = lixi;
-	document.getElementById('benxi').value = benxi;
-}
-```
-
-#### 索引
-
-- Package/FrontEnd/JavaScript/PracticeInterestCalculate
-
-### 4.对象
+## 对象
 
 略
 
-### 5.BOM（浏览器对象模型）
-
-#### 方法
+## BOM（浏览器对象模型）
 
 1.Windows
 
@@ -480,7 +500,7 @@ function get(){
 - 可以设计页面计时器
 - 见实现7
 
-#### 实现
+**实现**
 
 1.window方法
 
@@ -711,6 +731,219 @@ function get(){
 </html>
 ```
 
-#### 索引
+## Callback——Important
 
-- Package/FrontEnd/JavaScript/BOM
+- Definition: A function that is called only when the action is performed and finished.
+
+- Application: Asynchronous action
+
+- Implementation
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="utf-8">
+  		<title></title>
+  	</head>
+  	<body>
+  		<h1>Callback</h1>
+  		<script>
+  			myVariable = 0;
+  			alert(myVariable);
+  			function myFunction(){
+  				alert(myVariable);
+  			}
+  		</script>
+  		<button id="myFunction" onclick="myFunction(myVariable = 100)">Press me</button>
+  	</body>
+  </html>
+  ```
+
+  ```
+  # Analyse
+  1. The callback function is called only when the button is pressed.
+  2. The page will alert 0 then alert 100.
+  ```
+
+## Timing events
+
+- Methods
+  - setTimeout (function, milliseconds): Executes a function, after waiting a specified number of milliseconds.
+  - setInterval (function, milliseconds): Same as setTimeout(), but repeats the execution of the function continuously.
+
+### setTimeout()
+
+- Implementation 
+
+  <!--Use setTimeout to execute function and stop it-->
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="utf-8">
+  		<title>setTimeout</title>
+  	</head>
+  	<body>
+  		<h1>Press a button, wait 3 seconds, and page will alert hello</h1>
+  		<script>
+  			function sayHello(){
+  				alert("hello");
+  			}
+  		</script>
+  		<button id="setTime" onclick="say = setTimeout(sayHello,3000)">Hello</button>
+  		<button id="stopTime" onclick="clearTimeout(say)">Stop it</button>
+  	</body>
+  </html>
+  ```
+
+### setInterval ()
+
+- Implementation
+
+  <!--Update time every second and stop it-->
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="utf-8">
+  		<title>setTimeout</title>
+  	</head>
+  	<body>
+  		<h1>Update time</h1>
+  		<button id="stopTimer" onclick="clearInterval(myVar)">Stop Timer</button>
+  		<label id="demo"></label>
+  		<script>
+  			var myVar = setInterval(myTimer, 1000);
+  			function myTimer(){
+  				var d = new Date();
+  				document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+  			}
+  		</script>
+  	</body>
+  </html>
+  ```
+
+## 对象
+
+- Implementation
+
+  <!--创建对象-->
+
+  ```javascript
+  var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+  };
+  ```
+
+  <!--创建对象的方法-->
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="utf-8">
+  		<title></title>
+  	</head>
+  	<body>
+  		<script>
+  			var Person = {
+  				name: "Toyz",
+  				getName : function()
+  				{
+  					return this.name;
+  				}
+  			};
+  			name = Person.getName();
+  			alert(name);
+  		</script>
+  	</body>
+  </html>
+  ```
+
+  ```shell
+  # Analyse
+  1.注意，在方法中使用属性，需要使用"this"关键词。
+  ```
+
+## This
+
+- Rules
+
+  - 在方法中，this 表示该方法所属的对象。
+
+    ```javascript
+    var Person = {
+    				name: "Toyz",
+    				getName : function()
+    				{
+    					return this.name;
+    				}
+    			};
+    ```
+
+  - 如果单独使用，this 表示全局对象。
+
+  - 在函数中，this 表示全局对象。
+
+    ```javascript
+    function myFunction() {
+      return this
+    }
+    ```
+
+    ```shell
+    # Analyse
+    1.返回值是"[object Window]"
+    ```
+
+  - 在函数中，在严格模式下，this 是未定义的(undefined)。
+
+    ```javascript
+    "use strict";
+    var x = this;
+    ```
+
+  - 在事件中，this 表示接收事件的元素。
+
+    ```html
+    <!DOCTYPE html>
+    <html>
+      <head>
+      	<meta charset="utf-8">
+      </head>
+      <body>
+        <button onclick="this.style.display='none'">点我后我就消失了</button>
+      </body>
+    </html>
+    ```
+
+  - 类似 call() 和 apply() 方法可以将 this 引用到任何对象。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
