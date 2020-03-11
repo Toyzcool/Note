@@ -2,8 +2,40 @@
 
 - Rules
   - 区分大小写
+  
   - 声明之后需要有分号（semicolon）隔开
+  
   - 单线程
+  
+  - 执行过程中如果存在错误，后续代码不会执行
+  
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <body>
+      <h1>My Callback example</h1>
+      <script>
+        function myFunction() { 
+          ix=ix*2;
+        	setTimeout(myFuction2, 3000);
+       		alert(ix); 
+        }
+        function myFunction2() { 
+          ix=ix=1234;
+        }
+        var ix=1; 
+        setTimeout(myFunction, 3000);
+      </script>
+      </body> 
+    </html>
+    ```
+  
+    ```shell
+    # Analyse
+    1.因为"setTimeout(myFuction2, 3000);"中的函数名称错误，所以不会执行，后面的"alert(ix);"也不会执行。
+    ```
+  
+    
   
 - Implementation——Important
 
@@ -900,6 +932,7 @@
     ```shell
     # Analyse
     1.返回值是"[object Window]"
+    2.window 对象是浏览器 DOM 中所有对象的父对象，父对象也是对象，因此 window 对象的祖宗也是 Object。
     ```
 
   - 在函数中，在严格模式下，this 是未定义的(undefined)。

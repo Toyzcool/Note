@@ -855,3 +855,61 @@
   - 重新添加会覆盖原来的cookie
 
   - 删除就是将"expires"属性设置成过去的时间
+
+## Practice——轮播图
+
+- Implementation 
+
+  <!--轮播图，鼠标悬浮改变；5秒自动切换-->
+
+  ```html
+  <!DOCTYPE html>
+  <html>
+  	<head>
+  		<meta charset="utf-8" />
+  		<script src="js/jquery-3.4.1.min.js"></script>
+  		<link type="text/css" rel="styleSheet"  href="css/index.css"/>
+  		<title>Product</title>
+  	</head>
+  	<body onload="changePic()">
+  		<!-- HTML -->
+  		<h1>平衡车</h1>
+  		<div class="bigPic">
+  			<img class="big" src="img/1.jpg" />
+  		</div>
+  		
+  		<div class="smallPic">
+  			<img class="small" src="img/1.jpg" />
+  			<img class="small" src="img/2.jpg" />
+  			<img class="small" src="img/3.jpg" />
+  			<img class="small" src="img/4.jpg" />
+  			<img class="small" src="img/5.jpg" />
+  		</div>
+  		
+  		<!-- jQuery -->
+  		<script>
+  			$(function(){
+  				// Change by hover
+  				$(".small").hover(function(){
+  					$(".big").attr('src',$(this).attr('src'));
+  				});
+  				
+  				// Change by timer
+  				var srcs = new Array("img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg")
+  				var index = 0;
+  				setInterval(function(){
+  					if(index == srcs.length){
+  						index = 0;
+  						$('.big').attr('src',srcs[index]);
+  					}else{
+  						index++;
+  						$('.big').attr('src',srcs[index]);
+  					};
+  				},500);
+  			})
+  		</script>
+  	</body>
+  </html>
+  ```
+
+  
